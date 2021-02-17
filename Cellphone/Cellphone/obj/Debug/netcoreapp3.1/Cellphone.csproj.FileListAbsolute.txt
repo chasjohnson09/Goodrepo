@@ -1,0 +1,4 @@
+C:\Goodrepo\Cellphone\Cellphone\obj\Debug\netcoreapp3.1\Cellphone.csprojAssemblyReference.cache
+C:\Goodrepo\Cellphone\Cellphone\obj\Debug\netcoreapp3.1\Cellphone.AssemblyInfoInputs.cache
+C:\Goodrepo\Cellphone\Cellphone\obj\Debug\netcoreapp3.1\Cellphone.AssemblyInfo.cs
+C:\Goodrepo\Cellphone\Cellphone\obj\Debug\netcoreapp3.1\Cellphone.csproj.CoreCompileInputs.cache

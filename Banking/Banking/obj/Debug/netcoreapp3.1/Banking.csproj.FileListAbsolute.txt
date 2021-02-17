@@ -1,0 +1,13 @@
+C:\Goodrepo\Banking\Banking\bin\Debug\netcoreapp3.1\Banking.exe
+C:\Goodrepo\Banking\Banking\bin\Debug\netcoreapp3.1\Banking.deps.json
+C:\Goodrepo\Banking\Banking\bin\Debug\netcoreapp3.1\Banking.runtimeconfig.json
+C:\Goodrepo\Banking\Banking\bin\Debug\netcoreapp3.1\Banking.runtimeconfig.dev.json
+C:\Goodrepo\Banking\Banking\bin\Debug\netcoreapp3.1\Banking.dll
+C:\Goodrepo\Banking\Banking\bin\Debug\netcoreapp3.1\Banking.pdb
+C:\Goodrepo\Banking\Banking\obj\Debug\netcoreapp3.1\Banking.csprojAssemblyReference.cache
+C:\Goodrepo\Banking\Banking\obj\Debug\netcoreapp3.1\Banking.AssemblyInfoInputs.cache
+C:\Goodrepo\Banking\Banking\obj\Debug\netcoreapp3.1\Banking.AssemblyInfo.cs
+C:\Goodrepo\Banking\Banking\obj\Debug\netcoreapp3.1\Banking.csproj.CoreCompileInputs.cache
+C:\Goodrepo\Banking\Banking\obj\Debug\netcoreapp3.1\Banking.dll
+C:\Goodrepo\Banking\Banking\obj\Debug\netcoreapp3.1\Banking.pdb
+C:\Goodrepo\Banking\Banking\obj\Debug\netcoreapp3.1\Banking.genruntimeconfig.cache
