@@ -1,0 +1,13 @@
+C:\Goodrepo\InterfaceTutorial\InterfaceTutorial\bin\Debug\netcoreapp3.1\InterfaceTutorial.exe
+C:\Goodrepo\InterfaceTutorial\InterfaceTutorial\bin\Debug\netcoreapp3.1\InterfaceTutorial.deps.json
+C:\Goodrepo\InterfaceTutorial\InterfaceTutorial\bin\Debug\netcoreapp3.1\InterfaceTutorial.runtimeconfig.json
+C:\Goodrepo\InterfaceTutorial\InterfaceTutorial\bin\Debug\netcoreapp3.1\InterfaceTutorial.runtimeconfig.dev.json
+C:\Goodrepo\InterfaceTutorial\InterfaceTutorial\bin\Debug\netcoreapp3.1\InterfaceTutorial.dll
+C:\Goodrepo\InterfaceTutorial\InterfaceTutorial\bin\Debug\netcoreapp3.1\InterfaceTutorial.pdb
+C:\Goodrepo\InterfaceTutorial\InterfaceTutorial\obj\Debug\netcoreapp3.1\InterfaceTutorial.csprojAssemblyReference.cache
+C:\Goodrepo\InterfaceTutorial\InterfaceTutorial\obj\Debug\netcoreapp3.1\InterfaceTutorial.AssemblyInfoInputs.cache
+C:\Goodrepo\InterfaceTutorial\InterfaceTutorial\obj\Debug\netcoreapp3.1\InterfaceTutorial.AssemblyInfo.cs
+C:\Goodrepo\InterfaceTutorial\InterfaceTutorial\obj\Debug\netcoreapp3.1\InterfaceTutorial.csproj.CoreCompileInputs.cache
+C:\Goodrepo\InterfaceTutorial\InterfaceTutorial\obj\Debug\netcoreapp3.1\InterfaceTutorial.dll
+C:\Goodrepo\InterfaceTutorial\InterfaceTutorial\obj\Debug\netcoreapp3.1\InterfaceTutorial.pdb
+C:\Goodrepo\InterfaceTutorial\InterfaceTutorial\obj\Debug\netcoreapp3.1\InterfaceTutorial.genruntimeconfig.cache

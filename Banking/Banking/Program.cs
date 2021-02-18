@@ -6,7 +6,7 @@ namespace Banking
     {
         static void Main(string[] args)
         {
-            var sav1 = new SavingsComposition();    // creating new savings account
+            var sav1 = new SavingsComposition();    // creating new savings account with SavingsComposition
             sav1.Deposit(50);
             Console.WriteLine($"Savings balance is {sav1.Balance}");
             sav1.Withdraw(20);
@@ -34,6 +34,20 @@ namespace Banking
             Console.WriteLine($"account {acct1.Accountnumber} balance is {acct1.Balance}");
             acct1.Deposit(-200);
             Console.WriteLine($"account {acct1.Accountnumber} balance is {acct1.Balance}");
+            Console.WriteLine($"");
+
+            var sav2 = new SavingsInherate();    // creating new savings account with SavingIherate
+            sav2.Deposit(60);
+            Console.WriteLine($"Savings balance is {sav2.Balance}");
+            sav2.Withdraw(30);
+            Console.WriteLine($"Savings balance is {sav2.Balance}");
+            sav2.Withdraw(50);
+            Console.WriteLine($"Savings balance is {sav2.Balance}");
+            sav2.Deposit(70);
+            Console.WriteLine($"Savings balance is {sav2.Balance}");
+            sav2.PayInterest(3);
+            Console.WriteLine($"Savings balance is {sav2.Balance}");
+            Console.WriteLine($"");
 
         }
     }

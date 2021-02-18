@@ -37,8 +37,8 @@ namespace Banking
 
         }
 
-       // public Account() : this("Defacct0  { }
-        public Account(string acctNbr, string desc = "New Acoount")
+        public Account() : this("Defacct0", "Default Account Name") { } // defalt constructor
+        public Account(string acctNbr, string desc = "New Account") // constructor with two parameters
         {
             Accountnumber = acctNbr;
             Description = desc;
