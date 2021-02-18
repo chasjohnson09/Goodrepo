@@ -6,9 +6,9 @@ namespace Banking
 {
     class SavingsInherate : Account
     {
-        public decimal InterestRate { get; set; } = 0.12m;
+        public decimal InterestRate { get; set; } = 0.12m;  // setting interest rate
 
-        public void PayInterest(int months)
+        public void PayInterest(int months)     // setting up how interesst payment is worked
         {
             var interest = Balance * (InterestRate / 12) * months;
             Deposit(interest);

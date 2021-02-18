@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Banking.Exceptions;
 
 namespace Banking
 {
@@ -12,7 +13,11 @@ namespace Banking
 
         public void Deposit(decimal amount)     // setting up deposit statement
         {
-           if(amount > 0)   // not letting the ammount be under 0
+           if(amount <= 0)   // not letting the ammount be under 0
+            {
+                throw new AmountMustBePositiveException();
+            }
+            else
             {
             Balance += amount;  // statement to be executed 
             }
@@ -21,9 +26,9 @@ namespace Banking
        
         public void Withdraw(decimal amount)    // setting up withdraw statement 
         {
-            if(amount < 0)  // not letting the ammount be under 0
+            if(amount <= 0)  // not letting the ammount be under 0
             {
-                return;
+                throw new AmountMustBePositiveException();
             }
             if(Balance >= amount) // if the ammount is greater than the balance let the statement happen
             {
@@ -31,7 +36,7 @@ namespace Banking
             }
             else
             {
-                Console.WriteLine($"Insufficient funds");
+                throw new InsuffiecientFundsException(Balance, amount);
             }
             
 

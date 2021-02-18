@@ -1,0 +1,13 @@
+C:\Goodrepo\ExceptionTutorial\ExceptionTutorial\bin\Debug\netcoreapp3.1\ExceptionTutorial.exe
+C:\Goodrepo\ExceptionTutorial\ExceptionTutorial\bin\Debug\netcoreapp3.1\ExceptionTutorial.deps.json
+C:\Goodrepo\ExceptionTutorial\ExceptionTutorial\bin\Debug\netcoreapp3.1\ExceptionTutorial.runtimeconfig.json
+C:\Goodrepo\ExceptionTutorial\ExceptionTutorial\bin\Debug\netcoreapp3.1\ExceptionTutorial.runtimeconfig.dev.json
+C:\Goodrepo\ExceptionTutorial\ExceptionTutorial\bin\Debug\netcoreapp3.1\ExceptionTutorial.dll
+C:\Goodrepo\ExceptionTutorial\ExceptionTutorial\bin\Debug\netcoreapp3.1\ExceptionTutorial.pdb
+C:\Goodrepo\ExceptionTutorial\ExceptionTutorial\obj\Debug\netcoreapp3.1\ExceptionTutorial.csprojAssemblyReference.cache
+C:\Goodrepo\ExceptionTutorial\ExceptionTutorial\obj\Debug\netcoreapp3.1\ExceptionTutorial.AssemblyInfoInputs.cache
+C:\Goodrepo\ExceptionTutorial\ExceptionTutorial\obj\Debug\netcoreapp3.1\ExceptionTutorial.AssemblyInfo.cs
+C:\Goodrepo\ExceptionTutorial\ExceptionTutorial\obj\Debug\netcoreapp3.1\ExceptionTutorial.csproj.CoreCompileInputs.cache
+C:\Goodrepo\ExceptionTutorial\ExceptionTutorial\obj\Debug\netcoreapp3.1\ExceptionTutorial.dll
+C:\Goodrepo\ExceptionTutorial\ExceptionTutorial\obj\Debug\netcoreapp3.1\ExceptionTutorial.pdb
+C:\Goodrepo\ExceptionTutorial\ExceptionTutorial\obj\Debug\netcoreapp3.1\ExceptionTutorial.genruntimeconfig.cache

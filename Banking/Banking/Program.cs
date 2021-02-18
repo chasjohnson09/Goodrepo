@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Banking.Exceptions;
+using System;
 
 namespace Banking
 {
@@ -11,19 +12,32 @@ namespace Banking
             Console.WriteLine($"Savings balance is {sav1.Balance}");
             sav1.Withdraw(20);
             Console.WriteLine($"Savings balance is {sav1.Balance}");
-            sav1.Withdraw(50);
+            try
+            {
+            //sav1.Withdraw(50);
+            sav1.Deposit(-70);
+            }
+            catch (AmountMustBePositiveException ambpex)
+            {
+                Console.WriteLine(ambpex.Message);
+            }
+            catch(InsuffiecientFundsException ifex)
+            {
+                Console.WriteLine(ifex.Message);
+                return;
+            }
             Console.WriteLine($"Savings balance is {sav1.Balance}");
-            sav1.Deposit(70);
             Console.WriteLine($"Savings balance is {sav1.Balance}");
             Console.WriteLine($"");
            
             
-            var interist = sav1.Interest(3);    // what is the interest on sav1 after three months
-            Console.WriteLine($"Interest ammount is {interist}");
+            var interest = sav1.Interest(3);    // what is the interest on sav1 after three months
+            Console.WriteLine($"Interest ammount is {interest}");
             sav1.PayInterest(3);
             Console.WriteLine($"Savings balance is {sav1.Balance}");
             Console.WriteLine($"");
 
+            /*
             var acct1 = new Account("Acct102", "Greg's Account");
             Console.WriteLine($"account {acct1.Accountnumber} balance is {acct1.Balance}"); //writing the first balance
             acct1.Deposit(200);                                                              //depositing into account
@@ -48,7 +62,7 @@ namespace Banking
             sav2.PayInterest(3);
             Console.WriteLine($"Savings balance is {sav2.Balance}");
             Console.WriteLine($"");
-
+            */
         }
     }
 }
