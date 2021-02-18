@@ -1,0 +1,13 @@
+C:\Goodrepo\SchoolWork\SchoolWork\bin\Debug\netcoreapp3.1\SchoolWork.exe
+C:\Goodrepo\SchoolWork\SchoolWork\bin\Debug\netcoreapp3.1\SchoolWork.deps.json
+C:\Goodrepo\SchoolWork\SchoolWork\bin\Debug\netcoreapp3.1\SchoolWork.runtimeconfig.json
+C:\Goodrepo\SchoolWork\SchoolWork\bin\Debug\netcoreapp3.1\SchoolWork.runtimeconfig.dev.json
+C:\Goodrepo\SchoolWork\SchoolWork\bin\Debug\netcoreapp3.1\SchoolWork.dll
+C:\Goodrepo\SchoolWork\SchoolWork\bin\Debug\netcoreapp3.1\SchoolWork.pdb
+C:\Goodrepo\SchoolWork\SchoolWork\obj\Debug\netcoreapp3.1\SchoolWork.csprojAssemblyReference.cache
+C:\Goodrepo\SchoolWork\SchoolWork\obj\Debug\netcoreapp3.1\SchoolWork.AssemblyInfoInputs.cache
+C:\Goodrepo\SchoolWork\SchoolWork\obj\Debug\netcoreapp3.1\SchoolWork.AssemblyInfo.cs
+C:\Goodrepo\SchoolWork\SchoolWork\obj\Debug\netcoreapp3.1\SchoolWork.csproj.CoreCompileInputs.cache
+C:\Goodrepo\SchoolWork\SchoolWork\obj\Debug\netcoreapp3.1\SchoolWork.dll
+C:\Goodrepo\SchoolWork\SchoolWork\obj\Debug\netcoreapp3.1\SchoolWork.pdb
+C:\Goodrepo\SchoolWork\SchoolWork\obj\Debug\netcoreapp3.1\SchoolWork.genruntimeconfig.cache
