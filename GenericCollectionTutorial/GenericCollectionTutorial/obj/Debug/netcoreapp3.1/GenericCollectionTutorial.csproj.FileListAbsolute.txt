@@ -1,0 +1,13 @@
+C:\Goodrepo\GenericCollectionTutorial\GenericCollectionTutorial\bin\Debug\netcoreapp3.1\GenericCollectionTutorial.exe
+C:\Goodrepo\GenericCollectionTutorial\GenericCollectionTutorial\bin\Debug\netcoreapp3.1\GenericCollectionTutorial.deps.json
+C:\Goodrepo\GenericCollectionTutorial\GenericCollectionTutorial\bin\Debug\netcoreapp3.1\GenericCollectionTutorial.runtimeconfig.json
+C:\Goodrepo\GenericCollectionTutorial\GenericCollectionTutorial\bin\Debug\netcoreapp3.1\GenericCollectionTutorial.runtimeconfig.dev.json
+C:\Goodrepo\GenericCollectionTutorial\GenericCollectionTutorial\bin\Debug\netcoreapp3.1\GenericCollectionTutorial.dll
+C:\Goodrepo\GenericCollectionTutorial\GenericCollectionTutorial\bin\Debug\netcoreapp3.1\GenericCollectionTutorial.pdb
+C:\Goodrepo\GenericCollectionTutorial\GenericCollectionTutorial\obj\Debug\netcoreapp3.1\GenericCollectionTutorial.csprojAssemblyReference.cache
+C:\Goodrepo\GenericCollectionTutorial\GenericCollectionTutorial\obj\Debug\netcoreapp3.1\GenericCollectionTutorial.AssemblyInfoInputs.cache
+C:\Goodrepo\GenericCollectionTutorial\GenericCollectionTutorial\obj\Debug\netcoreapp3.1\GenericCollectionTutorial.AssemblyInfo.cs
+C:\Goodrepo\GenericCollectionTutorial\GenericCollectionTutorial\obj\Debug\netcoreapp3.1\GenericCollectionTutorial.csproj.CoreCompileInputs.cache
+C:\Goodrepo\GenericCollectionTutorial\GenericCollectionTutorial\obj\Debug\netcoreapp3.1\GenericCollectionTutorial.dll
+C:\Goodrepo\GenericCollectionTutorial\GenericCollectionTutorial\obj\Debug\netcoreapp3.1\GenericCollectionTutorial.pdb
+C:\Goodrepo\GenericCollectionTutorial\GenericCollectionTutorial\obj\Debug\netcoreapp3.1\GenericCollectionTutorial.genruntimeconfig.cache
