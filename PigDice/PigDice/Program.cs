@@ -20,6 +20,7 @@ namespace PigDice
             }
             return score;           // if the number rolled is 1 then return
         }
+
         static void Main(string[] args)
         {
             var HighScore = 300;        // the high score we want 
