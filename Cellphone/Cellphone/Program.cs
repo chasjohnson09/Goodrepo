@@ -6,7 +6,7 @@ namespace Cellphone
     {
         static void Main(string[] args)
         {
-            var cp1 = new Cellphone
+            var cp1 = new Cellphone // creating a new variable inside the cellphone class
             {
                 Phonenumber = "513-555-1212",
                 Serviceprovider = "Verizon",

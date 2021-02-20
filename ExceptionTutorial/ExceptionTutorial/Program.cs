@@ -6,13 +6,13 @@ namespace ExceptionTutorial
     {
         static void Main(string[] args)
         {
-            try         // try to do below
+            try         // try to do below 
             {
             Level1(3);
             }
             catch(Exception ex) // if there is an exception encountered, do below
             {
-                Console.WriteLine("The program encountered an exception");
+                Console.WriteLine("The program encountered an exception");// letting the user know that there was an exception that happened 
                 Console.WriteLine($"Exception: {ex.Message}");      // "Message" is the default message set inside of the exception
             }
             Console.WriteLine("Done...");

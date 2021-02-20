@@ -1,0 +1,13 @@
+C:\Goodrepo\Bowling\Bowling\bin\Debug\netcoreapp3.1\Bowling.exe
+C:\Goodrepo\Bowling\Bowling\bin\Debug\netcoreapp3.1\Bowling.deps.json
+C:\Goodrepo\Bowling\Bowling\bin\Debug\netcoreapp3.1\Bowling.runtimeconfig.json
+C:\Goodrepo\Bowling\Bowling\bin\Debug\netcoreapp3.1\Bowling.runtimeconfig.dev.json
+C:\Goodrepo\Bowling\Bowling\bin\Debug\netcoreapp3.1\Bowling.dll
+C:\Goodrepo\Bowling\Bowling\bin\Debug\netcoreapp3.1\Bowling.pdb
+C:\Goodrepo\Bowling\Bowling\obj\Debug\netcoreapp3.1\Bowling.csprojAssemblyReference.cache
+C:\Goodrepo\Bowling\Bowling\obj\Debug\netcoreapp3.1\Bowling.AssemblyInfoInputs.cache
+C:\Goodrepo\Bowling\Bowling\obj\Debug\netcoreapp3.1\Bowling.AssemblyInfo.cs
+C:\Goodrepo\Bowling\Bowling\obj\Debug\netcoreapp3.1\Bowling.csproj.CoreCompileInputs.cache
+C:\Goodrepo\Bowling\Bowling\obj\Debug\netcoreapp3.1\Bowling.dll
+C:\Goodrepo\Bowling\Bowling\obj\Debug\netcoreapp3.1\Bowling.pdb
+C:\Goodrepo\Bowling\Bowling\obj\Debug\netcoreapp3.1\Bowling.genruntimeconfig.cache

@@ -1,0 +1,13 @@
+C:\Goodrepo\FreeTime2-19\FreeTime2-19\bin\Debug\netcoreapp3.1\FreeTime2-19.exe
+C:\Goodrepo\FreeTime2-19\FreeTime2-19\bin\Debug\netcoreapp3.1\FreeTime2-19.deps.json
+C:\Goodrepo\FreeTime2-19\FreeTime2-19\bin\Debug\netcoreapp3.1\FreeTime2-19.runtimeconfig.json
+C:\Goodrepo\FreeTime2-19\FreeTime2-19\bin\Debug\netcoreapp3.1\FreeTime2-19.runtimeconfig.dev.json
+C:\Goodrepo\FreeTime2-19\FreeTime2-19\bin\Debug\netcoreapp3.1\FreeTime2-19.dll
+C:\Goodrepo\FreeTime2-19\FreeTime2-19\bin\Debug\netcoreapp3.1\FreeTime2-19.pdb
+C:\Goodrepo\FreeTime2-19\FreeTime2-19\obj\Debug\netcoreapp3.1\FreeTime2-19.csprojAssemblyReference.cache
+C:\Goodrepo\FreeTime2-19\FreeTime2-19\obj\Debug\netcoreapp3.1\FreeTime2-19.AssemblyInfoInputs.cache
+C:\Goodrepo\FreeTime2-19\FreeTime2-19\obj\Debug\netcoreapp3.1\FreeTime2-19.AssemblyInfo.cs
+C:\Goodrepo\FreeTime2-19\FreeTime2-19\obj\Debug\netcoreapp3.1\FreeTime2-19.csproj.CoreCompileInputs.cache
+C:\Goodrepo\FreeTime2-19\FreeTime2-19\obj\Debug\netcoreapp3.1\FreeTime2-19.dll
+C:\Goodrepo\FreeTime2-19\FreeTime2-19\obj\Debug\netcoreapp3.1\FreeTime2-19.pdb
+C:\Goodrepo\FreeTime2-19\FreeTime2-19\obj\Debug\netcoreapp3.1\FreeTime2-19.genruntimeconfig.cache
