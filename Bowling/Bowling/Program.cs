@@ -20,7 +20,7 @@ namespace Bowling
                 total += score;                  // adding the score from each frame to get a total score
             }
             Console.WriteLine($"Bowling score total is {total} ");
-            return total;                        // return the total 
+            return total;                        // return the total  
         }
         static void Main(string[] args)
 
