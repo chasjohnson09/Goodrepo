@@ -1,0 +1,13 @@
+C:\Goodrepo\GenericListPractice\GenericListPractice\bin\Debug\netcoreapp3.1\GenericListPractice.exe
+C:\Goodrepo\GenericListPractice\GenericListPractice\bin\Debug\netcoreapp3.1\GenericListPractice.deps.json
+C:\Goodrepo\GenericListPractice\GenericListPractice\bin\Debug\netcoreapp3.1\GenericListPractice.runtimeconfig.json
+C:\Goodrepo\GenericListPractice\GenericListPractice\bin\Debug\netcoreapp3.1\GenericListPractice.runtimeconfig.dev.json
+C:\Goodrepo\GenericListPractice\GenericListPractice\bin\Debug\netcoreapp3.1\GenericListPractice.dll
+C:\Goodrepo\GenericListPractice\GenericListPractice\bin\Debug\netcoreapp3.1\GenericListPractice.pdb
+C:\Goodrepo\GenericListPractice\GenericListPractice\obj\Debug\netcoreapp3.1\GenericListPractice.csprojAssemblyReference.cache
+C:\Goodrepo\GenericListPractice\GenericListPractice\obj\Debug\netcoreapp3.1\GenericListPractice.AssemblyInfoInputs.cache
+C:\Goodrepo\GenericListPractice\GenericListPractice\obj\Debug\netcoreapp3.1\GenericListPractice.AssemblyInfo.cs
+C:\Goodrepo\GenericListPractice\GenericListPractice\obj\Debug\netcoreapp3.1\GenericListPractice.csproj.CoreCompileInputs.cache
+C:\Goodrepo\GenericListPractice\GenericListPractice\obj\Debug\netcoreapp3.1\GenericListPractice.dll
+C:\Goodrepo\GenericListPractice\GenericListPractice\obj\Debug\netcoreapp3.1\GenericListPractice.pdb
+C:\Goodrepo\GenericListPractice\GenericListPractice\obj\Debug\netcoreapp3.1\GenericListPractice.genruntimeconfig.cache
