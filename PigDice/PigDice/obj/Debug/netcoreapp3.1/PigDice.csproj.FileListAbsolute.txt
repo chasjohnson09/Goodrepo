@@ -11,3 +11,16 @@ C:\Goodrepo\PigDice\PigDice\obj\Debug\netcoreapp3.1\PigDice.dll
 C:\Goodrepo\PigDice\PigDice\obj\Debug\netcoreapp3.1\PigDice.pdb
 C:\Goodrepo\PigDice\PigDice\obj\Debug\netcoreapp3.1\PigDice.genruntimeconfig.cache
 C:\Goodrepo\PigDice\PigDice\obj\Debug\netcoreapp3.1\PigDice.csprojAssemblyReference.cache
+C:\Users\chasj\Source\Repos\Goodrepo\PigDice\PigDice\bin\Debug\netcoreapp3.1\PigDice.exe
+C:\Users\chasj\Source\Repos\Goodrepo\PigDice\PigDice\bin\Debug\netcoreapp3.1\PigDice.deps.json
+C:\Users\chasj\Source\Repos\Goodrepo\PigDice\PigDice\bin\Debug\netcoreapp3.1\PigDice.runtimeconfig.json
+C:\Users\chasj\Source\Repos\Goodrepo\PigDice\PigDice\bin\Debug\netcoreapp3.1\PigDice.runtimeconfig.dev.json
+C:\Users\chasj\Source\Repos\Goodrepo\PigDice\PigDice\bin\Debug\netcoreapp3.1\PigDice.dll
+C:\Users\chasj\Source\Repos\Goodrepo\PigDice\PigDice\bin\Debug\netcoreapp3.1\PigDice.pdb
+C:\Users\chasj\Source\Repos\Goodrepo\PigDice\PigDice\obj\Debug\netcoreapp3.1\PigDice.csprojAssemblyReference.cache
+C:\Users\chasj\Source\Repos\Goodrepo\PigDice\PigDice\obj\Debug\netcoreapp3.1\PigDice.AssemblyInfoInputs.cache
+C:\Users\chasj\Source\Repos\Goodrepo\PigDice\PigDice\obj\Debug\netcoreapp3.1\PigDice.AssemblyInfo.cs
+C:\Users\chasj\Source\Repos\Goodrepo\PigDice\PigDice\obj\Debug\netcoreapp3.1\PigDice.csproj.CoreCompileInputs.cache
+C:\Users\chasj\Source\Repos\Goodrepo\PigDice\PigDice\obj\Debug\netcoreapp3.1\PigDice.dll
+C:\Users\chasj\Source\Repos\Goodrepo\PigDice\PigDice\obj\Debug\netcoreapp3.1\PigDice.pdb
+C:\Users\chasj\Source\Repos\Goodrepo\PigDice\PigDice\obj\Debug\netcoreapp3.1\PigDice.genruntimeconfig.cache

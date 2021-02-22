@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Goodrepo\\PigDice\\PigDice\\PigDice.csproj": {}
+    "C:\\Users\\chasj\\Source\\Repos\\Goodrepo\\PigDice\\PigDice\\PigDice.csproj": {}
   },
   "projects": {
-    "C:\\Goodrepo\\PigDice\\PigDice\\PigDice.csproj": {
+    "C:\\Users\\chasj\\Source\\Repos\\Goodrepo\\PigDice\\PigDice\\PigDice.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Goodrepo\\PigDice\\PigDice\\PigDice.csproj",
+        "projectUniqueName": "C:\\Users\\chasj\\Source\\Repos\\Goodrepo\\PigDice\\PigDice\\PigDice.csproj",
         "projectName": "PigDice",
-        "projectPath": "C:\\Goodrepo\\PigDice\\PigDice\\PigDice.csproj",
-        "packagesPath": "C:\\Users\\Laura Musa\\.nuget\\packages\\",
-        "outputPath": "C:\\Goodrepo\\PigDice\\PigDice\\obj\\",
+        "projectPath": "C:\\Users\\chasj\\Source\\Repos\\Goodrepo\\PigDice\\PigDice\\PigDice.csproj",
+        "packagesPath": "C:\\Users\\chasj\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\chasj\\Source\\Repos\\Goodrepo\\PigDice\\PigDice\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Laura Musa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\chasj\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
