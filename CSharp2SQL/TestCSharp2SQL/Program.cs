@@ -1,15 +1,17 @@
-﻿using System;
-
+﻿using CSharp2SQL;
+using System;
 namespace TestCSharp2SQL
 {
     class Program
     {
         static void Main(string[] args)
         {
-            public void Connect(string database)
-            {
-
-            }
+            var sql = new EducDbLib();
+            sql.Connect("EdDb");
+            Console.WriteLine("Connected successfully!");
+            
+            sql.Disconnect();
+            Console.WriteLine("Disconnected successfully!");
         }
     }
 }
