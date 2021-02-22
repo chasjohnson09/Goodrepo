@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryTutorial", "LibraryTutorial\LibraryTutorial.csproj", "{3E68C610-412D-494E-BF58-0216E12EE75F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestMathLib", "TestMathLib\TestMathLib.csproj", "{29BB25DF-8584-4683-8753-484065CC95EF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{3E68C610-412D-494E-BF58-0216E12EE75F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3E68C610-412D-494E-BF58-0216E12EE75F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3E68C610-412D-494E-BF58-0216E12EE75F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29BB25DF-8584-4683-8753-484065CC95EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29BB25DF-8584-4683-8753-484065CC95EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29BB25DF-8584-4683-8753-484065CC95EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29BB25DF-8584-4683-8753-484065CC95EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

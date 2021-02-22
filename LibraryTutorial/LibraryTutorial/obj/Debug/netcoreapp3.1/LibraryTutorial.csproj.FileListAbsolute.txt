@@ -1,0 +1,9 @@
+C:\Goodrepo\LibraryTutorial\LibraryTutorial\bin\Debug\netcoreapp3.1\LibraryTutorial.deps.json
+C:\Goodrepo\LibraryTutorial\LibraryTutorial\bin\Debug\netcoreapp3.1\LibraryTutorial.dll
+C:\Goodrepo\LibraryTutorial\LibraryTutorial\bin\Debug\netcoreapp3.1\LibraryTutorial.pdb
+C:\Goodrepo\LibraryTutorial\LibraryTutorial\obj\Debug\netcoreapp3.1\LibraryTutorial.csprojAssemblyReference.cache
+C:\Goodrepo\LibraryTutorial\LibraryTutorial\obj\Debug\netcoreapp3.1\LibraryTutorial.AssemblyInfoInputs.cache
+C:\Goodrepo\LibraryTutorial\LibraryTutorial\obj\Debug\netcoreapp3.1\LibraryTutorial.AssemblyInfo.cs
+C:\Goodrepo\LibraryTutorial\LibraryTutorial\obj\Debug\netcoreapp3.1\LibraryTutorial.csproj.CoreCompileInputs.cache
+C:\Goodrepo\LibraryTutorial\LibraryTutorial\obj\Debug\netcoreapp3.1\LibraryTutorial.dll
+C:\Goodrepo\LibraryTutorial\LibraryTutorial\obj\Debug\netcoreapp3.1\LibraryTutorial.pdb

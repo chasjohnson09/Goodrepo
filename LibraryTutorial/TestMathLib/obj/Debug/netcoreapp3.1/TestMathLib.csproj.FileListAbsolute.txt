@@ -1,0 +1,16 @@
+C:\Goodrepo\LibraryTutorial\TestMathLib\bin\Debug\netcoreapp3.1\TestMathLib.exe
+C:\Goodrepo\LibraryTutorial\TestMathLib\bin\Debug\netcoreapp3.1\TestMathLib.deps.json
+C:\Goodrepo\LibraryTutorial\TestMathLib\bin\Debug\netcoreapp3.1\TestMathLib.runtimeconfig.json
+C:\Goodrepo\LibraryTutorial\TestMathLib\bin\Debug\netcoreapp3.1\TestMathLib.runtimeconfig.dev.json
+C:\Goodrepo\LibraryTutorial\TestMathLib\bin\Debug\netcoreapp3.1\TestMathLib.dll
+C:\Goodrepo\LibraryTutorial\TestMathLib\bin\Debug\netcoreapp3.1\TestMathLib.pdb
+C:\Goodrepo\LibraryTutorial\TestMathLib\bin\Debug\netcoreapp3.1\LibraryTutorial.dll
+C:\Goodrepo\LibraryTutorial\TestMathLib\bin\Debug\netcoreapp3.1\LibraryTutorial.pdb
+C:\Goodrepo\LibraryTutorial\TestMathLib\obj\Debug\netcoreapp3.1\TestMathLib.csprojAssemblyReference.cache
+C:\Goodrepo\LibraryTutorial\TestMathLib\obj\Debug\netcoreapp3.1\TestMathLib.AssemblyInfoInputs.cache
+C:\Goodrepo\LibraryTutorial\TestMathLib\obj\Debug\netcoreapp3.1\TestMathLib.AssemblyInfo.cs
+C:\Goodrepo\LibraryTutorial\TestMathLib\obj\Debug\netcoreapp3.1\TestMathLib.csproj.CoreCompileInputs.cache
+C:\Goodrepo\LibraryTutorial\TestMathLib\obj\Debug\netcoreapp3.1\TestMathLib.csproj.CopyComplete
+C:\Goodrepo\LibraryTutorial\TestMathLib\obj\Debug\netcoreapp3.1\TestMathLib.dll
+C:\Goodrepo\LibraryTutorial\TestMathLib\obj\Debug\netcoreapp3.1\TestMathLib.pdb
+C:\Goodrepo\LibraryTutorial\TestMathLib\obj\Debug\netcoreapp3.1\TestMathLib.genruntimeconfig.cache
