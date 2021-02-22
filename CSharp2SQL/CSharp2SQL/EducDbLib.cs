@@ -6,7 +6,7 @@ namespace CSharp2SQL
     {
         public  SqlConnection connection { get; set; }      // how to connect to sql database from vs
         
-        public void ExecSelect()
+        public void SelectAllStudents()
         {
             var sql = "SELECT * From Student;";
             var cmd = new SqlCommand(sql, connection);
@@ -18,6 +18,19 @@ namespace CSharp2SQL
                 Console.WriteLine($"Id = {id}, lastname = {lastname}");
             }
             reader.Close();
+        }
+        public void SelectAllMajors()
+        {
+            var sql2 = "SELECT * From Major;";
+            var cmd2 = new SqlCommand(sql2, connection);
+            var reader2 = cmd2.ExecuteReader();
+            while (reader2.Read())
+            {
+                var id2 = Convert.ToInt32(reader2["Id"]);
+                var major = reader2["Major"].ToString();
+                Console.WriteLine($"Id = {id2}, major = {major}");
+            }
+            reader2.Close();
         }
 
         public void Connect(string database)        // setting the connection 
@@ -33,6 +46,7 @@ namespace CSharp2SQL
             }
             
         }
+        
         public void Disconnect()
         {
             connection.Close();

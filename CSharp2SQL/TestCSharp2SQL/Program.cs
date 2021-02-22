@@ -7,10 +7,12 @@ namespace TestCSharp2SQL
         static void Main(string[] args)
         {
             var sql = new EducDbLib();
+            var sql2 = new EducDbLib();
             sql.Connect("EdDb");
             Console.WriteLine("Connected successfully!");
 
-            sql.ExecSelect();
+            sql.SelectAllStudents();
+            sql2.SelectAllMajors();
             
             sql.Disconnect();
             Console.WriteLine("Disconnected successfully!");

@@ -27,19 +27,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Laura Musa\\.nuget\\packages\\": {}
+    "C:\\Users\\chasj\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Goodrepo\\LibraryTutorial\\TestMathLib\\TestMathLib.csproj",
+      "projectUniqueName": "C:\\Users\\chasj\\source\\repos\\Goodrepo\\LibraryTutorial\\TestMathLib\\TestMathLib.csproj",
       "projectName": "TestMathLib",
-      "projectPath": "C:\\Goodrepo\\LibraryTutorial\\TestMathLib\\TestMathLib.csproj",
-      "packagesPath": "C:\\Users\\Laura Musa\\.nuget\\packages\\",
-      "outputPath": "C:\\Goodrepo\\LibraryTutorial\\TestMathLib\\obj\\",
+      "projectPath": "C:\\Users\\chasj\\source\\repos\\Goodrepo\\LibraryTutorial\\TestMathLib\\TestMathLib.csproj",
+      "packagesPath": "C:\\Users\\chasj\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\chasj\\source\\repos\\Goodrepo\\LibraryTutorial\\TestMathLib\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Laura Musa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\chasj\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -53,8 +53,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Goodrepo\\LibraryTutorial\\LibraryTutorial\\LibraryTutorial.csproj": {
-              "projectPath": "C:\\Goodrepo\\LibraryTutorial\\LibraryTutorial\\LibraryTutorial.csproj"
+            "C:\\Users\\chasj\\source\\repos\\Goodrepo\\LibraryTutorial\\LibraryTutorial\\LibraryTutorial.csproj": {
+              "projectPath": "C:\\Users\\chasj\\source\\repos\\Goodrepo\\LibraryTutorial\\LibraryTutorial\\LibraryTutorial.csproj"
             }
           }
         }

@@ -7,3 +7,12 @@ C:\Goodrepo\CSharp2SQL\CSharp2SQL\obj\Debug\netcoreapp3.1\CSharp2SQL.AssemblyInf
 C:\Goodrepo\CSharp2SQL\CSharp2SQL\obj\Debug\netcoreapp3.1\CSharp2SQL.csproj.CoreCompileInputs.cache
 C:\Goodrepo\CSharp2SQL\CSharp2SQL\obj\Debug\netcoreapp3.1\CSharp2SQL.dll
 C:\Goodrepo\CSharp2SQL\CSharp2SQL\obj\Debug\netcoreapp3.1\CSharp2SQL.pdb
+C:\Users\chasj\source\repos\Goodrepo\CSharp2SQL\CSharp2SQL\bin\Debug\netcoreapp3.1\CSharp2SQL.deps.json
+C:\Users\chasj\source\repos\Goodrepo\CSharp2SQL\CSharp2SQL\bin\Debug\netcoreapp3.1\CSharp2SQL.dll
+C:\Users\chasj\source\repos\Goodrepo\CSharp2SQL\CSharp2SQL\bin\Debug\netcoreapp3.1\CSharp2SQL.pdb
+C:\Users\chasj\source\repos\Goodrepo\CSharp2SQL\CSharp2SQL\obj\Debug\netcoreapp3.1\CSharp2SQL.csprojAssemblyReference.cache
+C:\Users\chasj\source\repos\Goodrepo\CSharp2SQL\CSharp2SQL\obj\Debug\netcoreapp3.1\CSharp2SQL.AssemblyInfoInputs.cache
+C:\Users\chasj\source\repos\Goodrepo\CSharp2SQL\CSharp2SQL\obj\Debug\netcoreapp3.1\CSharp2SQL.AssemblyInfo.cs
+C:\Users\chasj\source\repos\Goodrepo\CSharp2SQL\CSharp2SQL\obj\Debug\netcoreapp3.1\CSharp2SQL.csproj.CoreCompileInputs.cache
+C:\Users\chasj\source\repos\Goodrepo\CSharp2SQL\CSharp2SQL\obj\Debug\netcoreapp3.1\CSharp2SQL.dll
+C:\Users\chasj\source\repos\Goodrepo\CSharp2SQL\CSharp2SQL\obj\Debug\netcoreapp3.1\CSharp2SQL.pdb

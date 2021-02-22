@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Goodrepo\\LibraryTutorial\\LibraryTutorial\\LibraryTutorial.csproj": {}
+    "C:\\Users\\chasj\\source\\repos\\Goodrepo\\LibraryTutorial\\LibraryTutorial\\LibraryTutorial.csproj": {}
   },
   "projects": {
-    "C:\\Goodrepo\\LibraryTutorial\\LibraryTutorial\\LibraryTutorial.csproj": {
+    "C:\\Users\\chasj\\source\\repos\\Goodrepo\\LibraryTutorial\\LibraryTutorial\\LibraryTutorial.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Goodrepo\\LibraryTutorial\\LibraryTutorial\\LibraryTutorial.csproj",
+        "projectUniqueName": "C:\\Users\\chasj\\source\\repos\\Goodrepo\\LibraryTutorial\\LibraryTutorial\\LibraryTutorial.csproj",
         "projectName": "LibraryTutorial",
-        "projectPath": "C:\\Goodrepo\\LibraryTutorial\\LibraryTutorial\\LibraryTutorial.csproj",
-        "packagesPath": "C:\\Users\\Laura Musa\\.nuget\\packages\\",
-        "outputPath": "C:\\Goodrepo\\LibraryTutorial\\LibraryTutorial\\obj\\",
+        "projectPath": "C:\\Users\\chasj\\source\\repos\\Goodrepo\\LibraryTutorial\\LibraryTutorial\\LibraryTutorial.csproj",
+        "packagesPath": "C:\\Users\\chasj\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\chasj\\source\\repos\\Goodrepo\\LibraryTutorial\\LibraryTutorial\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Laura Musa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\chasj\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
