@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\chasj\\Source\\Repos\\Goodrepo\\PigDice\\PigDice\\PigDice.csproj": {}
+    "C:\\Users\\chasj\\source\\repos\\Goodrepo\\PigDice\\PigDice\\PigDice.csproj": {}
   },
   "projects": {
-    "C:\\Users\\chasj\\Source\\Repos\\Goodrepo\\PigDice\\PigDice\\PigDice.csproj": {
+    "C:\\Users\\chasj\\source\\repos\\Goodrepo\\PigDice\\PigDice\\PigDice.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\chasj\\Source\\Repos\\Goodrepo\\PigDice\\PigDice\\PigDice.csproj",
+        "projectUniqueName": "C:\\Users\\chasj\\source\\repos\\Goodrepo\\PigDice\\PigDice\\PigDice.csproj",
         "projectName": "PigDice",
-        "projectPath": "C:\\Users\\chasj\\Source\\Repos\\Goodrepo\\PigDice\\PigDice\\PigDice.csproj",
+        "projectPath": "C:\\Users\\chasj\\source\\repos\\Goodrepo\\PigDice\\PigDice\\PigDice.csproj",
         "packagesPath": "C:\\Users\\chasj\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\chasj\\Source\\Repos\\Goodrepo\\PigDice\\PigDice\\obj\\",
+        "outputPath": "C:\\Users\\chasj\\source\\repos\\Goodrepo\\PigDice\\PigDice\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\chasj\\AppData\\Roaming\\NuGet\\NuGet.Config",
