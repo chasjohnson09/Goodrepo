@@ -6,18 +6,25 @@ namespace TestCSharp2SQL
     {
         static void Main(string[] args)
         {
-            //var sql = new EducDbLib();
-            var sql2 = new EducDbLib();
+            var conn = new Connection();
+            conn.Connect("EdDb");
+            Console.WriteLine("Connection was succesful!");
+            
+
+            
+            conn.Disconnect();
+            Console.WriteLine("Discconect was succesful!");
+
+           // var sql = new EducDbLib();
+           //// var sql2 = new EducDbLib();
            // sql.Connect("EdDb");
-            sql2.Connect("EdDb");
-            Console.WriteLine("Connected successfully!");
+           // Console.WriteLine("Connected successfully!");
 
-           // sql.SelectAllStudents();
-            sql2.SelectAllMajors();
-
-            //sql.Disconnect();
-            sql2.Disconnect();
-            Console.WriteLine("Disconnected successfully!");
+           // //sql.SelectAllStudents();
+           // //sql2.SelectAllMajors();
+           // sql.SelectAllClasses();
+           // sql.Disconnect();
+           // Console.WriteLine("Disconnected successfully!");
         }
     }
 }
