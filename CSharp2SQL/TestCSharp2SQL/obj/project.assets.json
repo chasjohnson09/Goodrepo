@@ -1221,19 +1221,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\chasj\\.nuget\\packages\\": {}
+    "C:\\Users\\Laura Musa\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\chasj\\source\\repos\\Goodrepo\\CSharp2SQL\\TestCSharp2SQL\\TestCSharp2SQL.csproj",
+      "projectUniqueName": "C:\\Goodrepo\\CSharp2SQL\\TestCSharp2SQL\\TestCSharp2SQL.csproj",
       "projectName": "TestCSharp2SQL",
-      "projectPath": "C:\\Users\\chasj\\source\\repos\\Goodrepo\\CSharp2SQL\\TestCSharp2SQL\\TestCSharp2SQL.csproj",
-      "packagesPath": "C:\\Users\\chasj\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\chasj\\source\\repos\\Goodrepo\\CSharp2SQL\\TestCSharp2SQL\\obj\\",
+      "projectPath": "C:\\Goodrepo\\CSharp2SQL\\TestCSharp2SQL\\TestCSharp2SQL.csproj",
+      "packagesPath": "C:\\Users\\Laura Musa\\.nuget\\packages\\",
+      "outputPath": "C:\\Goodrepo\\CSharp2SQL\\TestCSharp2SQL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\chasj\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Laura Musa\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1247,8 +1247,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\chasj\\source\\repos\\Goodrepo\\CSharp2SQL\\CSharp2SQL\\CSharp2SQL.csproj": {
-              "projectPath": "C:\\Users\\chasj\\source\\repos\\Goodrepo\\CSharp2SQL\\CSharp2SQL\\CSharp2SQL.csproj"
+            "C:\\Goodrepo\\CSharp2SQL\\CSharp2SQL\\CSharp2SQL.csproj": {
+              "projectPath": "C:\\Goodrepo\\CSharp2SQL\\CSharp2SQL\\CSharp2SQL.csproj"
             }
           }
         }

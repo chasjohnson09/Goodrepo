@@ -9,7 +9,7 @@ namespace CSharp2SQL
         public void SelectAllStudents()
         {
             var sql = "SELECT * From Student;";
-            var cmd = new SqlCommand(sql, connection);
+            var cmd = new SqlConnection(sql, connection);
             var reader = cmd.ExecuteReader();
             while (reader.Read())
             {
@@ -32,7 +32,6 @@ namespace CSharp2SQL
             }
             reader2.Close();
         }
-
         public void Connect(string database)        // setting the connection 
         {
             var connStr = $"server=localhost\\sqlexpress;" +
@@ -46,6 +45,7 @@ namespace CSharp2SQL
             }
             
         }
+
         
         public void Disconnect()
         {
