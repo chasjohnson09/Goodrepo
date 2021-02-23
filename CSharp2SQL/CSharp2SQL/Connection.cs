@@ -5,18 +5,18 @@ using System.Text;
 
 namespace CSharp2SQL
 {
-    public class Connection // have to put public so hat way it can be accessed 
+    public class Connection // have to put public so that way it can be accessed 
     {
-        public SqlConnection connection { get; set; }
+        public SqlConnection sqlconnection { get; set; }
 
-        public void Connect(string database)        // setting the connection
+        public void Connect(string database)        // setting the sqlconnection
         {
             var connStr = $"server=localhost\\sqlexpress;" +
                             $"database={database};" +
                             $"trusted_connection=true;";
-            connection = new SqlConnection(connStr);
-            connection.Open();      // opening the connection
-            if(connection.State != System.Data.ConnectionState.Open)
+            sqlconnection = new SqlConnection(connStr);
+            sqlconnection.Open();      // opening the sqlconnection
+            if(sqlconnection.State != System.Data.ConnectionState.Open)
             {
                 throw new Exception("Connection did not open");
             }
@@ -25,7 +25,7 @@ namespace CSharp2SQL
 
         public void Disconnect()
         {
-            connection.Close();
+            sqlconnection.Close();
         }
     }
 }
