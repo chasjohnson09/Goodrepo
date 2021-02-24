@@ -37,7 +37,7 @@ namespace CSharp2SQL
                         " GPA = @gpa" +
                         " Where Id = @id;";
 
-            var cmd = new SqlCommand(sql, connection.sqlconnection);
+            var cmd = new SqlCommand(sql, connection.sqlconnection);    
             cmd.Parameters.AddWithValue("@firstname", student.Firstname);
             cmd.Parameters.AddWithValue("@lastname", student.Lastname);
             cmd.Parameters.AddWithValue("@statecode", student.Statecode);
@@ -111,9 +111,9 @@ namespace CSharp2SQL
             return students;
         }
 
-        public StudentsController(Connection connection)    // creating an instance using one parameter-- which is the connection
-        {
-            this.connection = connection;
-        }
+                public StudentsController(Connection connection)    // creating an instance using one parameter-- which is the connection
+                {
+                    this.connection = connection;
+                }
     }
 }
