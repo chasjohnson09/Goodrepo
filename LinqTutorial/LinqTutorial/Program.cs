@@ -65,7 +65,17 @@ namespace LinqTutorial
                 Console.WriteLine($"Id = {col.Id} | Name = {col.Name} | Total = {col.Total} | Product = {col.Product} | Price = {col.Price} | Quantity = {col.Quantity}");
             };
 
-
+            //var result3 = from c in customers            // joining the customer table to the orders table and then also joining the orderline table 
+            //             join o in orders
+            //             on c.Id equals o.CustId
+            //             join ol in orderlines
+            //             on o.Id equals ol.OrderId
+            //             orderby o.Total descending
+            //             group o by o.Id into ord
+            //             select new
+            //             {
+            //                 ord.Key, o.total
+            //             };
 
 
 
@@ -92,10 +102,31 @@ namespace LinqTutorial
                 3682, 4607, 6566, 6383, 7370, 9807, 9922, 1355, 7195, 3687
             };
 
+
+
             var hello2 = from nbr in numbers    // number between 1500 and 3000 or 6500 and 8500
                          where (6500 <= nbr && nbr <= 8500) || (1500 <= nbr && nbr <= 3000)
                          orderby nbr
                          select nbr;
+
+
+            var numbersinboth = from n1 in numbers     // find all of the numbers that are shared between numbers and numbers2
+                                join n2 in numbers2
+                                on n1 equals n2
+                                select n1;
+            Console.WriteLine();
+            foreach(var n in numbersinboth)
+            {
+                Console.WriteLine($"the numbers shared are {n}");
+            }
+
+
+            var divideby3 = from nbr in numbers
+                            where (nbr % 3 == 0)
+                            select nbr;
+            var divideby3two = from nbr in numbers2
+                               where (nbr % 3 == 0)
+                               select nbr;
 
 
             var sumhello2 = (from nbr in numbers    // sum of the numbers between 1500 and 3000 or 6500 and 8500
@@ -104,7 +135,9 @@ namespace LinqTutorial
                              select nbr).Sum(nmb => nmb);   // pay attention to the sum function added to the end of the statement   
                                                             // this is an example of how to use query based and method based together
 
+
             var hello2M = numbers.Where(nbr => (nbr >= 1500 && nbr <= 3000 || nbr >= 6500 && nbr <= 8500)).OrderBy(nbr => nbr).ToList();  // method based 
+
 
             
             var lessThan5000 = from nbr in numbers  // selecting the numbers collection -- query syntax
@@ -125,13 +158,16 @@ namespace LinqTutorial
                                 select nbr;
 
 
+
             var method25007500 = numbers.Where(nbr => nbr >= 2500 && nbr <= 7500).OrderByDescending(nbr => nbr).ToList(); //method based for above 
+
 
             
             var hello = from nbr in numbers         // query based-- numbers less than 2000 and greater than 8000
                         where nbr < 2000 || nbr > 8000
                         orderby nbr descending
                         select nbr;
+
 
             
             var helloM = numbers.Where(nbr => nbr < 2000 || nbr > 8000).OrderBy(nbr => nbr).ToList();   //method based for above
