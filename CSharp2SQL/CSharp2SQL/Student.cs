@@ -12,7 +12,7 @@ namespace CSharp2SQL
         public string Statecode { get; set; }
         public int SAT { get; set; }
         public decimal GPA { get; set; }
-        public string Major { get; set; }
+        public int? MajoId { get; set; }
 
     }
 }

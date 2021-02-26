@@ -64,14 +64,27 @@ namespace CSharp2SQL
             return major;
         }
 
-        //public List<Major> GetAll()
-        //{
+        public List<Major> GetAll()
+        {
+            var sql = "Select * from Major;";
+            var cmd = new SqlCommand(sql, connection.sqlconnection);    // property inside of the collection class
+            var reader = cmd.ExecuteReader();
+            var majors = new List<Student>();
+            while (reader.Read())
+            {
+                var major = new Major();
+                major.Id = Convert.ToInt32(reader["Id"]);
+                major.Code = Convert.ToString(reader["Code"]);                                    //sets the major to null 
+                major.Desrciption = Convert.ToString(reader["Description"]);
+                major.MinSAT = Convert.ToInt32(reader["MinSAT"]);
+            }
+            reader.Close();
+            return majors;
+        }
 
-        //}
-
-        //public MajorsController (Connection connection)   
-        //{
-        //    this.connection = connection;
-        //}
+        public MajorsController(Connection connection)
+        {
+            this.connection = connection;
+        }
     }
 }

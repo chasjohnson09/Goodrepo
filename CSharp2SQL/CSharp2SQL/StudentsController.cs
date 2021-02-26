@@ -84,7 +84,7 @@ namespace CSharp2SQL
         } 
         public List<Student> GetAll()
         {
-            var sql = "Select * from Student s left join Major m on s.MajorId = m.Id order by s.Lastname;";
+            var sql = "Select * from Student;";
             var cmd = new SqlCommand(sql, connection.sqlconnection);    // property inside of the collection class
             var reader = cmd.ExecuteReader();
             var students = new List<Student>();
@@ -97,14 +97,13 @@ namespace CSharp2SQL
                 student.Statecode = Convert.ToString(reader["StateCode"]);
                 student.SAT = Convert.ToInt32(reader["SAT"]);
                 student.GPA = Convert.ToDecimal(reader["GPA"]);
+                student.MajoId = null;                                     //sets the major to null 
+                if (reader["Description"] != System.DBNull.Value)                // if the majorid is not null then the Description will be pushed into the value
+                {
+                    student.MajoId = Convert.ToInt32(reader["MajoId"]);
+                }
 
-                //student.Major = null;                                     //sets the major to null 
-                //if(reader["Description"] != System.DBNull.Value)                // if the majorid is not null then the Description will be pushed into the value
-                //{
-                //    student.Major = reader["Description"].ToString();
-                //}
-                
-                //students.Add(student);      // add the student to the list
+                students.Add(student);      // add the student to the list
 
             }
             reader.Close();
