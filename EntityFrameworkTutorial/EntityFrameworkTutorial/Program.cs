@@ -1,50 +1,53 @@
 ﻿using EntityFrameworkTutorial.Models;
 using System;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace EntityFrameworkTutorial
 {
     class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)       // make sure async is declared 
         {
+
             var sctrl = new StudentsController();   //setting a new instance of the studentcontroller
-            var students = sctrl.GetAll();      // calling the get all method that was created in the studentcontroller class
-            foreach(var s in students)
+            var students = await sctrl.GetAll();      // calling the get all method that was created in the studentcontroller class -- await is the end of the asyn method
+            foreach (var s in students)
             {
                 Console.WriteLine($"{s.Firstname} {s.Lastname}");
             }
-            
+
             Console.WriteLine($" ");
 
-            var st = sctrl.GetbyPK(1);          // calling on the "Get by PK" method
+            var st = await sctrl.GetbyPK(1);          // calling on the "Get by PK" method
             Console.WriteLine($"{st.Firstname} {st.Lastname} GETBYPK");
 
             Console.WriteLine($" ");
 
 
-            //var sGreg = new Student
-            //{
-            //    Id = 0,
-            //    Firstname = "sGreg",
-            //    Lastname = "Doud",
-            //    StateCode = "OH",
-            //    Gpa = 2.1m,
-            //    Sat = 805,
-            //    MajorId = 1
-            //};
-            //var sGregNew = sctrl.Create(sGreg);
-            //Console.WriteLine($"{sGreg.Firstname} {sGreg.Lastname} {sGreg.Id} {sGreg.MajorId}");
+            var sGreg = new Student
+            {
+                Id = 0,
+                Firstname = "sGreg",
+                Lastname = "Doud",
+                StateCode = "OH",
+                Gpa = 2.1m,
+                Sat = 805,
+                MajorId = 1
+            };
+            var sGregNew = await sctrl.Create(sGreg);   // await was added so the method will run asynchrounously!!
+            Console.WriteLine($"{sGreg.Firstname} {sGreg.Lastname} {sGreg.Id} {sGreg.MajorId}");
 
 
-            var std = sctrl.GetbyPK(67);
+            var std = await sctrl.GetbyPK(sGregNew.Id);  // method is async so that is why await is in the method statement
             std.Firstname = "Gregory";
-            sctrl.Change(std);
 
-            var studentdeleted = sctrl.Remove(std.Id);
+            await sctrl.Change(std);
 
-            st = sctrl.GetbyPK(67);       // calling on the "Get by PK" method
-            if( st == null)                 // if the id is null 
+            var studentdeleted = await sctrl.Remove(std.Id);
+
+            st = await sctrl.GetbyPK(67);       // calling on the "Get by PK" method  --  changed to async becuase the "getbyPK" method got changed to async
+            if (st == null)                 // if the id is null 
             {
                 Console.WriteLine($"Not found");
             }
@@ -56,8 +59,6 @@ namespace EntityFrameworkTutorial
 
             Console.WriteLine($" ");
 
-            var majctr = new MajorController();
-            var maj = majctr.GettAll();
 
         }
         static void Run1() { 

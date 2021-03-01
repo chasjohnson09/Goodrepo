@@ -1,26 +1,37 @@
 ﻿using EntityFrameworkTutorial.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace EntityFrameworkTutorial
 {
     public class StudentsController
     {
-            
+        private readonly eddbContext _context;
 
-        public IEnumerable<Student> GetAll()    // creating the "GetAll" method
+
+        public StudentsController()     // default constructor
         {
-             return _context.Students.ToList(); // students is the collection the method is pulling from 
+            _context = new eddbContext();
         }
 
-        public Student GetbyPK(int id)      // creating the "GetbyPK" method
-        {
-            return _context.Students.Find(id);  // "find" only reads a primary key 
-        }
 
-        public Student Create(Student student)
+        public async Task<IEnumerable<Student>> GetAll()    // creating the "GetAll" method   -- "async task" is how async method is started 
+        {
+             return await _context.Students.ToListAsync(); // students is the collection the method is pulling from --  "await" is there to bridge gap for async
+        }                                                   // make sure async is put on the end of the list to make sure it is sent in the correct type
+
+
+        public async Task<Student> GetbyPK(int id)      // creating the "GetbyPK" method -- async task becuase aysnc is infront of task
+        {
+            return await _context.Students.FindAsync(id);  // "find" only reads a primary key -- await is returned here -- "find" was changed to "FindAsync"
+        }                                                                                                                // for the async method
+
+
+        public async Task<Student> Create(Student student)
         {
             if(student == null)
             {
@@ -31,7 +42,7 @@ namespace EntityFrameworkTutorial
                 throw new Exception("Student ID must be 0");
             }
             _context.Students.Add(student);
-            var rowsAffected = _context.SaveChanges();
+            var rowsAffected = await _context.SaveChangesAsync();   // make sure to check for async versions of the methods!!!!!
             if(rowsAffected != 1)
             {
                 throw new Exception("Create Failed");
@@ -39,7 +50,8 @@ namespace EntityFrameworkTutorial
             return student;
         }
         
-        public void Change(Student student)
+
+        public async Task Change(Student student)
         {
             if(student == null)
             {
@@ -50,7 +62,7 @@ namespace EntityFrameworkTutorial
                 throw new Exception("Student.Id must be greater than zero!");
             }
             _context.Entry(student).State = Microsoft.EntityFrameworkCore.EntityState.Modified; // this is the cache holder for the data from the database
-            var rowsAffected = _context.SaveChanges();                
+            var rowsAffected = await _context.SaveChangesAsync();                
             if(rowsAffected != 1)
             {
                 throw new Exception("Change failed!");
@@ -59,15 +71,15 @@ namespace EntityFrameworkTutorial
             
         } 
 
-        public Student Remove(int id)
+        public async Task<Student> Remove(int id)
         {
-            var student = _context.Students.Find(id);
+            var student =await _context.Students.FindAsync(id);
             if(student == null)
             {
                 return null;
             }
             _context.Students.Remove(student);
-            var rowsAffected = _context.SaveChanges();
+            var rowsAffected = await _context.SaveChangesAsync();
             if(rowsAffected != 1)
             {
                 throw new Exception("Remove Failed!!");
@@ -94,9 +106,5 @@ namespace EntityFrameworkTutorial
         }
 
 
-        public StudentsController()     // default constructor
-        {
-            _context = new eddbContext();
-        }
     }
 }

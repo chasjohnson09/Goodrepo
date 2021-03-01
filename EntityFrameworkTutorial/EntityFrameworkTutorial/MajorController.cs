@@ -1,54 +1,74 @@
 ﻿using EntityFrameworkTutorial.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace EntityFrameworkTutorial
 {
     public class MajorController
     {
         public eddbContext _context;
-        public IEnumerable<Major> GettAll()
+
+
+        public async Task<IEnumerable<Major>> GettAll()
         {
-            return _context.Majors.ToList();
+            return await _context.Majors.ToListAsync();
         }
-        public Major GetPK(int id)
+
+
+        public async Task<Major> GetPK(int id)
         {
-            return _context.Majors.Find(id);
+            return await _context.Majors.FindAsync(id);
         }
-        public Major Create(Major major)
+
+
+        public async Task<Major> Create(Major major)
         {
             if(major.Id != 0)
             {
                 throw new Exception("Major must be ZERO");
             }
             _context.Majors.Add(major);
-            var rowsAffected = _context.SaveChanges();
+            var rowsAffected = await _context.SaveChangesAsync();
             if( rowsAffected != 1)
             {
                 throw new Exception("Create Failed");
             }
             return major;
-
         }
-        public void Change(Major major)
+
+
+        public async Task Change(Major major)
         {
+            if(major == null)
+            {
+                throw new Exception("Must enter a Major ID");
+            }
             if(major.Id < 0 )
             {
                 throw new Exception("Major Id must be greater than ZERO");
             }
             _context.Entry(major).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
-            var rowsAffected = _context.SaveChanges();
+            var rowsAffected = await _context.SaveChangesAsync();
             if(rowsAffected != 1)
             {
                 throw new Exception("Change Failed");
             }
             return;
         }
-        public Major Remove(int id)
+
+
+        public async Task<Major> Remove(int id)
         {
             var major = _context.Majors.Find(id);
+            if(major == null)
+            {
+                return null;
+            }
+            int count = await _context.Students.Where(s => s.MajorId == major.Id).CountAsync();
             _context.Majors.Remove(major);
             var rowsAffected = _context.SaveChanges();
             if(rowsAffected != 1)
