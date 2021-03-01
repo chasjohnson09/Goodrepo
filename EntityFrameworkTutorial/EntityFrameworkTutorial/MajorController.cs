@@ -6,9 +6,9 @@ using System.Text;
 
 namespace EntityFrameworkTutorial
 {
-    class MajorController
+    public class MajorController
     {
-        private readonly eddbContext _context;
+        public eddbContext _context;
         public IEnumerable<Major> GettAll()
         {
             return _context.Majors.ToList();
