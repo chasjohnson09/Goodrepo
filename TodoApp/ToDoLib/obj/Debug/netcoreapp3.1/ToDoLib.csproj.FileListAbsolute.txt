@@ -1,0 +1,12 @@
+C:\Goodrepo\TodoApp\ToDoLib\bin\Debug\netcoreapp3.1\ToDoLib.deps.json
+C:\Goodrepo\TodoApp\ToDoLib\bin\Debug\netcoreapp3.1\ToDoLib.runtimeconfig.json
+C:\Goodrepo\TodoApp\ToDoLib\bin\Debug\netcoreapp3.1\ToDoLib.runtimeconfig.dev.json
+C:\Goodrepo\TodoApp\ToDoLib\bin\Debug\netcoreapp3.1\ToDoLib.dll
+C:\Goodrepo\TodoApp\ToDoLib\bin\Debug\netcoreapp3.1\ToDoLib.pdb
+C:\Goodrepo\TodoApp\ToDoLib\obj\Debug\netcoreapp3.1\ToDoLib.csprojAssemblyReference.cache
+C:\Goodrepo\TodoApp\ToDoLib\obj\Debug\netcoreapp3.1\ToDoLib.AssemblyInfoInputs.cache
+C:\Goodrepo\TodoApp\ToDoLib\obj\Debug\netcoreapp3.1\ToDoLib.AssemblyInfo.cs
+C:\Goodrepo\TodoApp\ToDoLib\obj\Debug\netcoreapp3.1\ToDoLib.csproj.CoreCompileInputs.cache
+C:\Goodrepo\TodoApp\ToDoLib\obj\Debug\netcoreapp3.1\ToDoLib.dll
+C:\Goodrepo\TodoApp\ToDoLib\obj\Debug\netcoreapp3.1\ToDoLib.pdb
+C:\Goodrepo\TodoApp\ToDoLib\obj\Debug\netcoreapp3.1\ToDoLib.genruntimeconfig.cache
