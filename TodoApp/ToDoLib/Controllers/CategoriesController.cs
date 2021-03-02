@@ -19,5 +19,23 @@ namespace ToDoLib.Controllers
         {
             return await _context.Categories.ToListAsync();
         }
+        public async Task Change(Todo todo)
+        {
+            if(todo == null)
+            {
+                throw new Exception("Todo cannot be NULL");
+            }
+            if(todo.Id < 0)
+            {
+                throw new Exception("Id must be greater than ZERO");
+            }
+            _context.Entry(todo).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+            var rowsaffected = await _context.SaveChangesAsync();
+            if(rowsaffected != 1)
+            {
+                throw new Exception("Change FAILED!!!");
+            }
+            return;
+        }
     }
 }

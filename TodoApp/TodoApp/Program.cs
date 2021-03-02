@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Threading.Tasks;
+using ToDoLib.Controllers;
 
 namespace TodoApp
 {
     class Program
     {
         TodoController todoCtrl = null;
-        CategoriesController catctrl = null;
+        CategoriesController Catctrl = null;
         void ListAllTodos()
         {
             Cli.DisplayLine("Called ListAllTodos()");

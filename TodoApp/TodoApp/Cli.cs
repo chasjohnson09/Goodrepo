@@ -16,9 +16,8 @@ namespace TodoApp
             var todo = new Todo()
             {
                 Id = 0,
-                Description = Convert.ToString.
-
-            }
+                Description = Convert.
+            };
 
         }
         public static DateTime? GetDateTime(string prompt)
