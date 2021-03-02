@@ -46,17 +46,17 @@ namespace EFCodeFirstSoultion
             return item;
         }
 
-        public async Task Change(Order order)
+        public async Task Change(Item item)
         {
-            if (order == null)
+            if (item == null)
             {
-                throw new Exception("Order cannot be NULL");
+                throw new Exception("Item cannot be NULL");
             }
-            if (order.Id < 0)
+            if (item.Id < 0)
             {
-                throw new Exception("Order ID must be greater then ZERO");
+                throw new Exception("Item ID must be greater then ZERO");
             }
-            _context.Entry(order).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+            _context.Entry(item).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
             var rowsaffected = await _context.SaveChangesAsync();
             if (rowsaffected != 1)
             {
@@ -66,20 +66,20 @@ namespace EFCodeFirstSoultion
         }
 
 
-        public async Task<Order> Remove(int id)
+        public async Task<Item> Remove(int id)
         {
-            var order = await _context.Orders.FindAsync(id);
-            if (order == null)
+            var item = await _context.Item.FindAsync(id);
+            if (item == null)
             {
                 throw new Exception("Order ID cannot be NULL");
             }
-            _context.Orders.Remove(order);
+            _context.Item.Remove(item);
             var rowsaffected = await _context.SaveChangesAsync();
             if (rowsaffected != 1)
             {
                 throw new Exception("Remove Failed");
             }
-            return order;
+            return item;
         }
     }
 }

@@ -26,24 +26,24 @@ namespace EFCodeFirstSoultion
         }
 
 
-        public async Task<Order> Create(Orderline orderline)
-        {
-            if (orderline == null)
-            {
-                throw new Exception("Order cannot be NULL");
-            }
-            if (orderline.Id != 0)
-            {
-                throw new Exception("Order ID must be ZERO");
-            }
-            await _context.AddAsync(orderline);
-            var rowsaffected = await _context.SaveChangesAsync();
-            if (rowsaffected != 1)
-            {
-                throw new Exception("Create FAILED!!!");
-            }
-            return orderline;
-        }
+        //public async Task<Item> Create(Orderline orderline)
+        //{
+        //    if (orderline == null)
+        //    {
+        //        throw new Exception("Order cannot be NULL");
+        //    }
+        //    if (orderline.Id != 0)
+        //    {
+        //        throw new Exception("Order ID must be ZERO");
+        //    }
+        //    await _context.Orderlines.AddAsync(orderline);
+        //    var rowsaffected = await _context.SaveChangesAsync();
+        //    if (rowsaffected != 1)
+        //    {
+        //        throw new Exception("Create FAILED!!!");
+        //    }
+        //    return orderline;
+        //}
 
         public async Task Change(Orderline orderline)
         {
@@ -72,7 +72,7 @@ namespace EFCodeFirstSoultion
             {
                 throw new Exception("Orderline ID cannot be NULL");
             }
-            _context.Orders.Remove(orderline);
+            _context.Orderlines.Remove(orderline);
             var rowsaffected = await _context.SaveChangesAsync();
             if (rowsaffected != 1)
             {

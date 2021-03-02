@@ -20,6 +20,5 @@ namespace EFCodeFirstSoultion.Models
         public decimal Sales { get; set; }
         
         public DateTime DateCreated { get; set; }
-
     }
 }
