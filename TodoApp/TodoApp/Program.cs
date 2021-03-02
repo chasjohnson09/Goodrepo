@@ -1,9 +1,12 @@
 ﻿using System;
+using System.Threading.Tasks;
 
 namespace TodoApp
 {
     class Program
     {
+        TodoController todoCtrl = null;
+        CategoriesController catctrl = null;
         void ListAllTodos()
         {
             Cli.DisplayLine("Called ListAllTodos()");
@@ -16,6 +19,8 @@ namespace TodoApp
             {
                 switch (option)
                 {
+                    case 2:
+                        Create();
                     case 1:
                         ListAllTodos();
                         break;
@@ -31,10 +36,21 @@ namespace TodoApp
         int DisplayMenu()
         {
             Cli.DisplayLine("Menu:");
+            Cli.DisplayLine("2 : Create New Todo");
             Cli.DisplayLine("1 : List all Todos");
             Cli.DisplayLine("0 : Exit");
             var option = Cli.Getint("Enter menu number");
             return option;
+        }
+        async Task CreateTodo()
+        {
+            Cli.DisplayLine("called CreateTodo()");
+            Cli.DisplayLine();
+            var categories = await carCtrl.GetAll();
+            var todo = new ToDoLib
+            {
+
+            }
         }
         static void Main(string[] args)
         {

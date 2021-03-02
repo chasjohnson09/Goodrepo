@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using ToDoLib.Models;
 
 namespace TodoApp
 {
@@ -9,6 +10,16 @@ namespace TodoApp
         public static void DisplayLine(string prompt)
         {
             Console.WriteLine($"{prompt}");
+        }
+        public static CreateTodo(string prompt)
+        {
+            var todo = new Todo()
+            {
+                Id = 0,
+                Description = Convert.ToString.
+
+            }
+
         }
         public static DateTime? GetDateTime(string prompt)
         {
