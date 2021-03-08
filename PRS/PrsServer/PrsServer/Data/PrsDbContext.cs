@@ -30,7 +30,7 @@ namespace PrsServer.Data
 
             builder.Entity<Product>(e =>
             {
-                e.HasIndex(v => v.PartNbr).IsUnique(true);
+                e.HasIndex(p => p.PartNbr).IsUnique(true);
             });
         }
 

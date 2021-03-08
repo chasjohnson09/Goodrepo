@@ -23,7 +23,9 @@ namespace PrsServer.Models
         public string PhoneNumber { get; set; }
         [StringLength(255)]
         public string Email { get; set; }
+        [Required]
         public bool IsReviewer { get; set; }
+        [Required]
         public bool IsAdmin { get; set; }
     }
 }

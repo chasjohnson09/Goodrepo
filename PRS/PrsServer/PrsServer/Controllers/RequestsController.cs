@@ -21,6 +21,14 @@ namespace PrsServer.Controllers
             _context = context;
         }
 
+        // GET: api/Orders/review
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<Request>>> GetProposedOrders(Request request)
+        {
+            return await _context.Request.Include(r => r.User)
+                .Where(r => r.Status == "REVIEW").ToListAsync(); 
+        }
+
         // GET: api/Requests
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Request>>> GetRequest()
