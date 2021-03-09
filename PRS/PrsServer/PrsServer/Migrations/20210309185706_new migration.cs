@@ -2,33 +2,28 @@
 
 namespace PrsServer.Migrations
 {
-    public partial class addedallotherclassesandcontrollers : Migration
+    public partial class newmigration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Request",
+                name: "Users",
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Description = table.Column<string>(maxLength: 80, nullable: false),
-                    Justification = table.Column<string>(maxLength: 80, nullable: false),
-                    RejctionReason = table.Column<string>(maxLength: 80, nullable: true),
-                    DeliveryMode = table.Column<string>(maxLength: 20, nullable: false),
-                    Status = table.Column<string>(maxLength: 10, nullable: false),
-                    Total = table.Column<decimal>(type: "decimal (11,2)", nullable: false),
-                    UserId = table.Column<int>(nullable: false)
+                    Username = table.Column<string>(maxLength: 30, nullable: false),
+                    Password = table.Column<string>(maxLength: 30, nullable: false),
+                    Firstname = table.Column<string>(maxLength: 30, nullable: false),
+                    Lastname = table.Column<string>(maxLength: 30, nullable: false),
+                    PhoneNumber = table.Column<string>(maxLength: 12, nullable: true),
+                    Email = table.Column<string>(maxLength: 255, nullable: true),
+                    IsReviewer = table.Column<bool>(nullable: false),
+                    IsAdmin = table.Column<bool>(nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Request", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_Request_Users_UserId",
-                        column: x => x.UserId,
-                        principalTable: "Users",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                    table.PrimaryKey("PK_Users", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -49,6 +44,31 @@ namespace PrsServer.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Vendor", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Request",
+                columns: table => new
+                {
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Description = table.Column<string>(maxLength: 80, nullable: false),
+                    Justification = table.Column<string>(maxLength: 80, nullable: false),
+                    RejectionReason = table.Column<string>(maxLength: 80, nullable: true),
+                    DeliveryMode = table.Column<string>(maxLength: 20, nullable: false),
+                    Status = table.Column<string>(maxLength: 10, nullable: false),
+                    Total = table.Column<decimal>(type: "decimal (11,2)", nullable: false),
+                    UserId = table.Column<int>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Request", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Request_Users_UserId",
+                        column: x => x.UserId,
+                        principalTable: "Users",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -83,7 +103,7 @@ namespace PrsServer.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     RequestId = table.Column<int>(nullable: false),
                     ProductId = table.Column<int>(nullable: false),
-                    Qunatity = table.Column<int>(nullable: false)
+                    Quantity = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -129,6 +149,12 @@ namespace PrsServer.Migrations
                 column: "RequestId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_Users_Username",
+                table: "Users",
+                column: "Username",
+                unique: true);
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Vendor_Code",
                 table: "Vendor",
                 column: "Code",
@@ -148,6 +174,9 @@ namespace PrsServer.Migrations
 
             migrationBuilder.DropTable(
                 name: "Vendor");
+
+            migrationBuilder.DropTable(
+                name: "Users");
         }
     }
 }

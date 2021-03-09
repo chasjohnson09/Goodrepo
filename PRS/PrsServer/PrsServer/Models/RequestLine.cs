@@ -17,6 +17,6 @@ namespace PrsServer.Models
         public int ProductId { get; set; }
         public virtual Product Product { get; set; }
         [Required]
-        public int Qunatity { get; set; } = 0;
+        public int Quantity { get; set; } = 0;
     }
 }

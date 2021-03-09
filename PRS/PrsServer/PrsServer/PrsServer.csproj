@@ -5,6 +5,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20210308161303_init migration.cs" />
+    <Compile Remove="Migrations\20210308161303_init migration.Designer.cs" />
+    <Compile Remove="Migrations\20210308185557_added all other classes and controllers.cs" />
+    <Compile Remove="Migrations\20210308185557_added all other classes and controllers.Designer.cs" />
+    <Compile Remove="Migrations\20210309164217_added some methods and also updated DB.cs" />
+    <Compile Remove="Migrations\20210309164217_added some methods and also updated DB.Designer.cs" />
+    <Compile Remove="Migrations\20210309164544_hello.cs" />
+    <Compile Remove="Migrations\20210309164544_hello.Designer.cs" />
+    <Compile Remove="Migrations\20210309185426_first migration.cs" />
+    <Compile Remove="Migrations\20210309185426_first migration.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.sqlserver" Version="3.1.12" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.tools" Version="3.1.12">
       <PrivateAssets>all</PrivateAssets>

@@ -9,8 +9,8 @@ using PrsServer.Data;
 namespace PrsServer.Migrations
 {
     [DbContext(typeof(PrsDbContext))]
-    [Migration("20210308185557_added all other classes and controllers")]
-    partial class addedallotherclassesandcontrollers
+    [Migration("20210309185706_new migration")]
+    partial class newmigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -116,7 +116,7 @@ namespace PrsServer.Migrations
                     b.Property<int>("ProductId")
                         .HasColumnType("int");
 
-                    b.Property<int>("Qunatity")
+                    b.Property<int>("Quantity")
                         .HasColumnType("int");
 
                     b.Property<int>("RequestId")

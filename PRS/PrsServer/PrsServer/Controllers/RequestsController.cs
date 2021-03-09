@@ -21,15 +21,7 @@ namespace PrsServer.Controllers
             _context = context;
         }
 
-        //// GET: api/Requests
-        //[HttpGet]
-        //public async Task<ActionResult<IEnumerable<Request>>> Login(User user)
-        //{
-        //    await _context.Request.ToListAsync();
-        //    if(user.Username == 
-        //}
-
-
+        
         private async Task<IActionResult> CalculateRequestTotal(int id)
         {
             var request = await _context.Request.FindAsync(id);
@@ -38,7 +30,7 @@ namespace PrsServer.Controllers
                 return NotFound();
             }
             request.Total = _context.RequestLine.Where(rl => rl.RequestId == id)
-                .Sum(rl => rl.Qunatity * rl.Product.Price);
+                .Sum(rl => rl.Quantity * rl.Product.Price);
             var rowsaffected = await _context.SaveChangesAsync();
             if (rowsaffected != 1)
             {
@@ -54,13 +46,13 @@ namespace PrsServer.Controllers
         public async Task<IActionResult> SetRequestToApprove(int id)
         {
             var request = await _context.Request.FindAsync(id);
-            //if(request.User.IsReviewer != true)
-            //{
-            //    Console.WriteLine($"You are not authorized to change a request");     // once login method is done this can be uncommented
-            //}
             if(request == null)
             {
                 return NotFound();
+            }
+            if(request.User.IsReviewer != true)
+            {
+                throw new Exception("You are not authorized to review requests");
             }
             request.Status = "APPROVED";
             return await PutRequest(request.Id, request);
@@ -92,8 +84,8 @@ namespace PrsServer.Controllers
 
 
         // GET: api/Requests/review
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<Request>>> GetProposedOrders(Request request)
+        [HttpGet("review")]
+        public async Task<ActionResult<IEnumerable<Request>>> GetReviewOrders(Request request)
         {
             return await _context.Request.Include(r => r.User)
                 .Where(r => r.Status == "REVIEW").ToListAsync(); 
@@ -104,7 +96,7 @@ namespace PrsServer.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Request>>> GetRequest()
         {
-            return await _context.Request.ToListAsync();
+            return await _context.Request.Include(r => r.User).ToListAsync();
         }
 
         // GET: api/Requests/5
