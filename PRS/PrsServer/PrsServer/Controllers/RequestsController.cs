@@ -50,42 +50,38 @@ namespace PrsServer.Controllers
             {
                 return NotFound();
             }
-            if(request.User.IsReviewer != true)
-            {
-                throw new Exception("You are not authorized to review requests");
-            }
             request.Status = "APPROVED";
             return await PutRequest(request.Id, request);
         }
 
         // PUT: api/Requests/Reject/5
-        //[HttpGet("edit/{id}")]
-        //public async Task<IActionResult> SetRequestToReject(int id)
-        //{
-        //    var request = await _context.Request.FindAsync(id);
-        //    //if (request.User.IsReviewer != true)
-        //    //{
-        //    //    Console.WriteLine($"You are not authorized to change a request");   //uncomment this once the login method is done 
-        //    //}
-        //    if (request == null)
-        //    {
-        //        return NotFound();
-        //    }
-        //    request.Status = "REJECTED";
-        //    if(request.Status == "REJECTED" && request.RejectionReason == null)
-        //    {
-        //        Console.WriteLine($"Please provide a rejection reason");
-                
-        //    }
-        //    return await PutRequest(request.Id, request);
-        //}
+        [HttpGet("edit/{id}")]
+        public async Task<IActionResult> SetRequestToReject(int id)
+        {
+            var request = await _context.Request.FindAsync(id);
+            if (request.User.IsReviewer != true)
+            {
+                throw new Exception("You are not authorized to change a request");   //uncomment this once the login method is done 
+            }
+            if (request == null)
+            {
+                return NotFound();
+            }
+            request.Status = "REJECTED";
+            //if (request.Status == "REJECTED" && request.RejectionReason == null)
+            //{
+            //    Console.WriteLine($"Please provide a rejection reason");              // don't know if this is going to work the way i want it to 
+
+            //}
+            return await PutRequest(request.Id, request);
+        }
 
 
 
 
         // GET: api/Requests/review
         [HttpGet("review")]
-        public async Task<ActionResult<IEnumerable<Request>>> GetReviewOrders(Request request)
+        public async Task<ActionResult<IEnumerable<Request>>> GetReviewOrders()
         {
             return await _context.Request.Include(r => r.User)
                 .Where(r => r.Status == "REVIEW").ToListAsync(); 
