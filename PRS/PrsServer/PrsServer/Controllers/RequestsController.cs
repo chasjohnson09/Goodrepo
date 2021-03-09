@@ -21,13 +21,84 @@ namespace PrsServer.Controllers
             _context = context;
         }
 
-        // GET: api/Orders/review
+        //// GET: api/Requests
+        //[HttpGet]
+        //public async Task<ActionResult<IEnumerable<Request>>> Login(User user)
+        //{
+        //    await _context.Request.ToListAsync();
+        //    if(user.Username == 
+        //}
+
+
+        private async Task<IActionResult> CalculateRequestTotal(int id)
+        {
+            var request = await _context.Request.FindAsync(id);
+            if (request == null)
+            {
+                return NotFound();
+            }
+            request.Total = _context.RequestLine.Where(rl => rl.RequestId == id)
+                .Sum(rl => rl.Qunatity * rl.Product.Price);
+            var rowsaffected = await _context.SaveChangesAsync();
+            if (rowsaffected != 1)
+            {
+                throw new Exception("Failed to update Request Total");
+            }
+            return Ok();
+        }
+
+
+
+        // PUT: api/Requests/Approve/5
+        [HttpGet("edit/{id}")]
+        public async Task<IActionResult> SetRequestToApprove(int id)
+        {
+            var request = await _context.Request.FindAsync(id);
+            //if(request.User.IsReviewer != true)
+            //{
+            //    Console.WriteLine($"You are not authorized to change a request");     // once login method is done this can be uncommented
+            //}
+            if(request == null)
+            {
+                return NotFound();
+            }
+            request.Status = "APPROVED";
+            return await PutRequest(request.Id, request);
+        }
+
+        // PUT: api/Requests/Reject/5
+        //[HttpGet("edit/{id}")]
+        //public async Task<IActionResult> SetRequestToReject(int id)
+        //{
+        //    var request = await _context.Request.FindAsync(id);
+        //    //if (request.User.IsReviewer != true)
+        //    //{
+        //    //    Console.WriteLine($"You are not authorized to change a request");   //uncomment this once the login method is done 
+        //    //}
+        //    if (request == null)
+        //    {
+        //        return NotFound();
+        //    }
+        //    request.Status = "REJECTED";
+        //    if(request.Status == "REJECTED" && request.RejectionReason == null)
+        //    {
+        //        Console.WriteLine($"Please provide a rejection reason");
+                
+        //    }
+        //    return await PutRequest(request.Id, request);
+        //}
+
+
+
+
+        // GET: api/Requests/review
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Request>>> GetProposedOrders(Request request)
         {
             return await _context.Request.Include(r => r.User)
                 .Where(r => r.Status == "REVIEW").ToListAsync(); 
         }
+
 
         // GET: api/Requests
         [HttpGet]
@@ -89,7 +160,8 @@ namespace PrsServer.Controllers
         public async Task<ActionResult<Request>> PostRequest(Request request)
         {
             _context.Request.Add(request);
-            await _context.SaveChangesAsync();
+            request.Status = (request.Total <= 50) ? "APPROVED" : "REVIEW";     // this includes the automatic approve and automatically sets status to review
+            await _context.SaveChangesAsync();                                  // if it does not qualify for fast approve
 
             return CreatedAtAction("GetRequest", new { id = request.Id }, request);
         }

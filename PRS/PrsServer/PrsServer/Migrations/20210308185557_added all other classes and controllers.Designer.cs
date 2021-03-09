@@ -84,7 +84,7 @@ namespace PrsServer.Migrations
                         .HasColumnType("nvarchar(80)")
                         .HasMaxLength(80);
 
-                    b.Property<string>("RejctionReason")
+                    b.Property<string>("RejectionReason")
                         .HasColumnType("nvarchar(80)")
                         .HasMaxLength(80);
 

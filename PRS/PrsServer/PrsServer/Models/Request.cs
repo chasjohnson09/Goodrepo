@@ -16,7 +16,7 @@ namespace PrsServer.Models
         [StringLength(80), Required]
         public string Justification { get; set; }
         [StringLength(80)]
-        public string RejctionReason { get; set; }
+        public string RejectionReason { get; set; }
         [StringLength(20), Required]
         public string DeliveryMode { get; set; } = "PICKUP";
         [StringLength(10), Required]

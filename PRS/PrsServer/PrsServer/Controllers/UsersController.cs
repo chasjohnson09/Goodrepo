@@ -107,32 +107,6 @@ namespace PrsServer.Controllers
             return _context.Users.Any(e => e.Id == id);
         }
 
-        //// GET: api/Users
-        //[HttpGet]
-        //public async Task<ActionResult<IEnumerable<User>>> GetUsername(User user)
-        //{
-        //    return await _context.Users.ToListAsync(user.Username);
-        //}
-
-        //// GET: api/Users
-        //[HttpGet]
-        //public async Task<ActionResult<IEnumerable<User>>> GetPassword(User.)
-        //{
-        //    return await _context.Users.ToListAsync();
-        //}
-
-        //public async Task<ActionResult<IEnumerable<User>>> Login(User user)
-        //{
-        //    await _context.Users.ToListAsync(user.Username);
-        //    if(user.Username == user.Username && user.Password == user.Password)
-        //    {
-        //        return await user;
-        //    }
-        //    else
-        //    {
-        //        return null;
-        //    }
-        //}
 
     }
 }
