@@ -1,0 +1,13 @@
+C:\Goodrepo\LinqTutorial\LinqTutorial\bin\Debug\netcoreapp3.1\LinqTutorial.exe
+C:\Goodrepo\LinqTutorial\LinqTutorial\bin\Debug\netcoreapp3.1\LinqTutorial.deps.json
+C:\Goodrepo\LinqTutorial\LinqTutorial\bin\Debug\netcoreapp3.1\LinqTutorial.runtimeconfig.json
+C:\Goodrepo\LinqTutorial\LinqTutorial\bin\Debug\netcoreapp3.1\LinqTutorial.runtimeconfig.dev.json
+C:\Goodrepo\LinqTutorial\LinqTutorial\bin\Debug\netcoreapp3.1\LinqTutorial.dll
+C:\Goodrepo\LinqTutorial\LinqTutorial\bin\Debug\netcoreapp3.1\LinqTutorial.pdb
+C:\Goodrepo\LinqTutorial\LinqTutorial\obj\Debug\netcoreapp3.1\LinqTutorial.csprojAssemblyReference.cache
+C:\Goodrepo\LinqTutorial\LinqTutorial\obj\Debug\netcoreapp3.1\LinqTutorial.AssemblyInfoInputs.cache
+C:\Goodrepo\LinqTutorial\LinqTutorial\obj\Debug\netcoreapp3.1\LinqTutorial.AssemblyInfo.cs
+C:\Goodrepo\LinqTutorial\LinqTutorial\obj\Debug\netcoreapp3.1\LinqTutorial.csproj.CoreCompileInputs.cache
+C:\Goodrepo\LinqTutorial\LinqTutorial\obj\Debug\netcoreapp3.1\LinqTutorial.dll
+C:\Goodrepo\LinqTutorial\LinqTutorial\obj\Debug\netcoreapp3.1\LinqTutorial.pdb
+C:\Goodrepo\LinqTutorial\LinqTutorial\obj\Debug\netcoreapp3.1\LinqTutorial.genruntimeconfig.cache
