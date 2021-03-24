@@ -34,7 +34,6 @@ namespace GenericListPractice
                 Console.WriteLine($"{friend.PhoneNumber} : {friend.Name}"); // write out the phone number and the name for each 
             }
 
-        }
     }
 
     internal class Dictionary<T>

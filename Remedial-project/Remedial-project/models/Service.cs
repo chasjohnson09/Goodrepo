@@ -7,8 +7,12 @@ using System.Threading.Tasks;
 namespace Remedial_project.models
 {
     class Service
-    {
-        public int Id { get; set; }
-        public int ServiceYears { get; set; }
+    { 
+        public string Description { get; set; }
+        public string Unit { get; set; }
+        public double Price { get; set; }
+        public int MyProperty { get; set; }
+        virtual public int WidgetId { get; set; }
+        public string ServiceYears { get; set; }
     }
 }

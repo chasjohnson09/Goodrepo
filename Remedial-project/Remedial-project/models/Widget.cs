@@ -12,6 +12,9 @@ namespace Remedial_project.models
         public string Description { get; set; }
         public string Unit { get; set; }
         public double Price { get; set; }
+        public string Size { get; set; }
+        public string Model { get; set; }
+
 
     }
 }
