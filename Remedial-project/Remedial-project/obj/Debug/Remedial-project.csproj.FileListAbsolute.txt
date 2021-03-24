@@ -1,0 +1,7 @@
+C:\Goodrepo\Remedial-project\Remedial-project\bin\Debug\Remedial-project.exe.config
+C:\Goodrepo\Remedial-project\Remedial-project\bin\Debug\Remedial-project.exe
+C:\Goodrepo\Remedial-project\Remedial-project\bin\Debug\Remedial-project.pdb
+C:\Goodrepo\Remedial-project\Remedial-project\obj\Debug\Remedial-project.csprojAssemblyReference.cache
+C:\Goodrepo\Remedial-project\Remedial-project\obj\Debug\Remedial-project.csproj.CoreCompileInputs.cache
+C:\Goodrepo\Remedial-project\Remedial-project\obj\Debug\Remedial-project.exe
+C:\Goodrepo\Remedial-project\Remedial-project\obj\Debug\Remedial-project.pdb

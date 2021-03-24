@@ -13,6 +13,6 @@ namespace Remedial_project.models
         public double Price { get; set; }
         public int MyProperty { get; set; }
         virtual public int WidgetId { get; set; }
-        public string ServiceYears { get; set; }
+        public int ServiceYears { get; set; }
     }
 }
