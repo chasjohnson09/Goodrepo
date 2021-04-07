@@ -96,18 +96,21 @@ namespace PrsServer.Controllers
         }
 
         // GET: api/Requests/5
-        [HttpGet("{id}")]
-        public async Task<ActionResult<Request>> GetRequest(int id)
-        {
-            var request = await _context.Request.FindAsync(id);
+        //[HttpGet("{id}")]
+        //public async Task<ActionResult<Request>> GetRequest(int id)
+        //{
+        //    var request = await _context.Request.Include(r => r.User)
+        //                                        .Include(l => l.RequestLine)
+        //                                        .ThenInclude(r => r.Product)
+        //                                        .SingleOrDefaultAsync(r => r.Id == id);
 
-            if (request == null)
-            {
-                return NotFound();
-            }
+        //    if (request == null)
+        //    {
+        //        return NotFound();
+        //    }
 
-            return request;
-        }
+        //    return request;
+        //}
 
         // PUT: api/Requests/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
