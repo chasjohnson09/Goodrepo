@@ -96,21 +96,22 @@ namespace PrsServer.Controllers
         }
 
         // GET: api/Requests/5
-        //[HttpGet("{id}")]
-        //public async Task<ActionResult<Request>> GetRequest(int id)
-        //{
-        //    var request = await _context.Request.Include(r => r.User)
-        //                                        .Include(l => l.RequestLine)
-        //                                        .ThenInclude(r => r.Product)
-        //                                        .SingleOrDefaultAsync(r => r.Id == id);
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Request>> GetRequest(int id)
+        {
+            var request = await _context.Request
+                .Include(r => r.User)
+           //     .Include(l => l.RequestLines)
+             //   .ThenInclude(r => r.Product)              NEED TO FIX THIS!!!!!!!!!!!!!
+                .SingleOrDefaultAsync(r => r.Id == id);
 
-        //    if (request == null)
-        //    {
-        //        return NotFound();
-        //    }
+            if (request == null)
+            {
+                return NotFound();
+            }
 
-        //    return request;
-        //}
+            return request;
+        }
 
         // PUT: api/Requests/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
@@ -151,7 +152,7 @@ namespace PrsServer.Controllers
         public async Task<ActionResult<Request>> PostRequest(Request request)
         {
             _context.Request.Add(request);
-            request.Status = (request.Total <= 50) ? "APPROVED" : "REVIEW";     // this includes the automatic approve and automatically sets status to review
+         //   request.Status = (request.Total <= 50) ? "APPROVED" : "REVIEW";     // this includes the automatic approve and automatically sets status to review
             await _context.SaveChangesAsync();                                  // if it does not qualify for fast approve
 
             return CreatedAtAction("GetRequest", new { id = request.Id }, request);
