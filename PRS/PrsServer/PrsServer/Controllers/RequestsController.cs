@@ -22,22 +22,7 @@ namespace PrsServer.Controllers
         }
 
         
-        private async Task<IActionResult> CalculateRequestTotal(int id)
-        {
-            var request = await _context.Request.FindAsync(id);
-            if (request == null)
-            {
-                return NotFound();
-            }
-            request.Total = _context.RequestLine.Where(rl => rl.RequestId == id)
-                .Sum(rl => rl.Quantity * rl.Product.Price);
-            var rowsaffected = await _context.SaveChangesAsync();
-            if (rowsaffected != 1)
-            {
-                throw new Exception("Failed to update Request Total");
-            }
-            return Ok();
-        }
+
 
 
 
@@ -68,11 +53,6 @@ namespace PrsServer.Controllers
                 return NotFound();
             }
             request.Status = "REJECTED";
-            //if (request.Status == "REJECTED" && request.RejectionReason == null)
-            //{
-            //    Console.WriteLine($"Please provide a rejection reason");              // don't know if this is going to work the way i want it to 
-
-            //}
             return await PutRequest(request.Id, request);
         }
 
@@ -101,8 +81,8 @@ namespace PrsServer.Controllers
         {
             var request = await _context.Request
                 .Include(r => r.User)
-           //     .Include(l => l.RequestLines)
-             //   .ThenInclude(r => r.Product)              NEED TO FIX THIS!!!!!!!!!!!!!
+                .Include(l => l.Requestlines)
+                .ThenInclude(r => r.Product)           
                 .SingleOrDefaultAsync(r => r.Id == id);
 
             if (request == null)

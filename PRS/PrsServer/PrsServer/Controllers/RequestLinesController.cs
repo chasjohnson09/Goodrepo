@@ -32,7 +32,7 @@ namespace PrsServer.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<RequestLine>> GetRequestLine(int id)
         {
-            var requestLine = await _context.RequestLine.FindAsync(id);
+            var requestLine = await _context.RequestLine.Include(x => x.Product).SingleOrDefaultAsync(x => x.Id == id);
 
             if (requestLine == null)
             {
@@ -70,7 +70,7 @@ namespace PrsServer.Controllers
                     throw;
                 }
             }
-
+            await CalculateRequestTotal(requestLine.RequestId);
             return NoContent();
         }
 
@@ -82,6 +82,7 @@ namespace PrsServer.Controllers
         {
             _context.RequestLine.Add(requestLine);
             await _context.SaveChangesAsync();
+            await CalculateRequestTotal(requestLine.RequestId);
 
             return CreatedAtAction("GetRequestLine", new { id = requestLine.Id }, requestLine);
         }
@@ -91,6 +92,7 @@ namespace PrsServer.Controllers
         public async Task<ActionResult<RequestLine>> DeleteRequestLine(int id)
         {
             var requestLine = await _context.RequestLine.FindAsync(id);
+
             if (requestLine == null)
             {
                 return NotFound();
@@ -98,6 +100,7 @@ namespace PrsServer.Controllers
 
             _context.RequestLine.Remove(requestLine);
             await _context.SaveChangesAsync();
+            await CalculateRequestTotal(requestLine.RequestId);
 
             return requestLine;
         }
@@ -105,6 +108,22 @@ namespace PrsServer.Controllers
         private bool RequestLineExists(int id)
         {
             return _context.RequestLine.Any(e => e.Id == id);
+        }
+        private async Task<IActionResult> CalculateRequestTotal(int id)
+        {
+            var request = await _context.Request.FindAsync(id);
+            if (request == null)
+            {
+                return NotFound();
+            }
+            request.Total = _context.RequestLine.Where(rl => rl.RequestId == id)
+                .Sum(rl => rl.Quantity * rl.Product.Price);
+            var rowsaffected = await _context.SaveChangesAsync();
+            if (rowsaffected != 1)
+            {
+                throw new Exception("Failed to update Request Total");
+            }
+            return Ok();
         }
     }
 }
