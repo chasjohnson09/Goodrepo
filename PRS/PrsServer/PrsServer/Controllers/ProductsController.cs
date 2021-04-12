@@ -58,6 +58,11 @@ namespace PrsServer.Controllers
             try
             {
                 await _context.SaveChangesAsync();
+                var Requesttoupdate = await _context.RequestLine.Where(x => x.ProductId == product.Id).ToListAsync();
+                foreach(var request in Requesttoupdate)
+                {
+                    await CalculateRequestTotal(request.RequestId);
+                }
             }
             catch (DbUpdateConcurrencyException)
             {
@@ -105,6 +110,22 @@ namespace PrsServer.Controllers
         private bool ProductExists(int id)
         {
             return _context.Product.Any(e => e.Id == id);
+        }
+        public async Task<IActionResult> CalculateRequestTotal(int id)
+        {
+            var request = await _context.Request.FindAsync(id);
+            if (request == null)
+            {
+                return NotFound();
+            }
+            request.Total = _context.RequestLine.Where(rl => rl.RequestId == id)
+                .Sum(rl => rl.Quantity * rl.Product.Price);
+            var rowsaffected = await _context.SaveChangesAsync();
+            if (rowsaffected != 1)
+            {
+                throw new Exception("Failed to update Request Total");
+            }
+            return Ok();
         }
     }
 }

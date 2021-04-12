@@ -27,7 +27,7 @@ namespace PrsServer.Controllers
 
 
         // PUT: api/Requests/Approve/5
-        [HttpGet("edit/{id}")]
+        [HttpPut("Approve/{id}")]
         public async Task<IActionResult> SetRequestToApprove(int id)
         {
             var request = await _context.Request.FindAsync(id);
@@ -40,20 +40,17 @@ namespace PrsServer.Controllers
         }
 
         // PUT: api/Requests/Reject/5
-        [HttpGet("edit/{id}")]
-        public async Task<IActionResult> SetRequestToReject(int id)
+        [HttpPut("Reject/{id}")]
+        public async Task<IActionResult> SetRequestToReject(int id, Request request)
         {
-            var request = await _context.Request.FindAsync(id);
-            if (request.User.IsReviewer != true)
-            {
-                throw new Exception("You are not authorized to change a request");   //uncomment this once the login method is done 
-            }
-            if (request == null)
+            var requestdb = await _context.Request.FindAsync(id);
+            if (requestdb == null)
             {
                 return NotFound();
             }
-            request.Status = "REJECTED";
-            return await PutRequest(request.Id, request);
+            requestdb.Status = "REJECTED";
+            requestdb.RejectionReason = request.RejectionReason;
+            return await PutRequest(requestdb.Id, requestdb);
         }
 
 

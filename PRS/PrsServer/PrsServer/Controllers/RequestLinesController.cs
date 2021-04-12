@@ -109,7 +109,7 @@ namespace PrsServer.Controllers
         {
             return _context.RequestLine.Any(e => e.Id == id);
         }
-        private async Task<IActionResult> CalculateRequestTotal(int id)
+        public async Task<IActionResult> CalculateRequestTotal(int id)
         {
             var request = await _context.Request.FindAsync(id);
             if (request == null)
