@@ -57,11 +57,11 @@ namespace PrsServer.Controllers
 
 
         // GET: api/Requests/review
-        [HttpGet("review")]
-        public async Task<ActionResult<IEnumerable<Request>>> GetReviewOrders()
+        [HttpGet("review/{id}")]
+        public async Task<ActionResult<IEnumerable<Request>>> GetReviewOrders(int id)
         {
             return await _context.Request.Include(r => r.User)
-                .Where(r => r.Status == "REVIEW").ToListAsync(); 
+                .Where(r => r.Status == "REVIEW" && r.UserId != id).ToListAsync(); 
         }
 
 
@@ -129,9 +129,7 @@ namespace PrsServer.Controllers
         public async Task<ActionResult<Request>> PostRequest(Request request)
         {
             _context.Request.Add(request);
-         //   request.Status = (request.Total <= 50) ? "APPROVED" : "REVIEW";     // this includes the automatic approve and automatically sets status to review
-            await _context.SaveChangesAsync();                                  // if it does not qualify for fast approve
-
+            await _context.SaveChangesAsync();
             return CreatedAtAction("GetRequest", new { id = request.Id }, request);
         }
 
@@ -149,6 +147,19 @@ namespace PrsServer.Controllers
             await _context.SaveChangesAsync();
 
             return request;
+        }
+
+        // PUT: api/Requests/Review/5
+        [HttpPut("Review/{id}")]
+        public async Task<IActionResult> SetRequestToReview(int id)
+        {
+            var request = await _context.Request.FindAsync(id);
+            if (request == null)
+            {
+                return NotFound();
+            }
+            request.Status = (request.Total <= 50) ? "APPROVED" : "REVIEW";
+            return await PutRequest(request.Id, request);
         }
 
         private bool RequestExists(int id)
